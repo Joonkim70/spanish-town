@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<title>스페인어 마을</title>
+<link rel="manifest" href="manifest.json" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="스페인어 마을" />
+<meta name="theme-color" content="#5b8c5a" />
+<link rel="apple-touch-icon" href="icons/icon.svg" />
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="app">
+
+  <!-- 타이틀 화면 -->
+  <section id="screen-title" class="screen">
+    <div class="title-card">
+      <h1>🌵 스페인어 마을</h1>
+      <p class="subtitle">매일 조금씩, 이웃들과 스페인어로 수다떨기</p>
+      <div class="stat-row">
+        <div class="stat-pill">🔥 <span id="stat-streak">0</span>일 연속</div>
+        <div class="stat-pill">💬 오늘 <span id="stat-energy">3</span>/3</div>
+      </div>
+      <button id="btn-enter-town" class="btn-primary">마을로 가기</button>
+      <button id="btn-open-journal-title" class="btn-secondary">📔 단어장 보기</button>
+    </div>
+  </section>
+
+  <!-- 마을 맵 화면 -->
+  <section id="screen-map" class="screen hidden">
+    <header class="map-header">
+      <button id="btn-back-title" class="icon-btn">←</button>
+      <div class="stat-row small">
+        <span>🔥 <span id="map-streak">0</span></span>
+        <span>💬 <span id="map-energy">3</span>/3</span>
+      </div>
+      <button id="btn-open-journal" class="icon-btn">📔</button>
+    </header>
+    <div id="village-grid" class="village-grid"></div>
+    <p class="hint">타일을 눌러 이동하고, 이웃 옆으로 가서 다시 누르면 대화를 시작해요</p>
+  </section>
+
+  <!-- 대화 화면 -->
+  <section id="screen-dialogue" class="screen hidden">
+    <div class="dialogue-wrap">
+      <div class="npc-portrait" id="dlg-npc-emoji">🙂</div>
+      <div class="npc-name" id="dlg-npc-name"></div>
+
+      <div class="speech-bubble">
+        <div class="es-row">
+          <p class="es-text" id="dlg-npc-es"></p>
+          <button id="btn-speak-npc" class="speaker-btn" aria-label="다시 듣기">🔊</button>
+        </div>
+        <p class="ko-text hidden" id="dlg-npc-ko"></p>
+        <button id="btn-toggle-meaning" class="link-btn">뜻 보기</button>
+      </div>
+
+      <div id="dlg-options" class="options-list"></div>
+    </div>
+
+    <!-- 교정 오버레이 -->
+    <div id="correction-overlay" class="overlay hidden">
+      <div class="correction-card">
+        <div class="correction-badge">✏️ 표현 교정</div>
+        <p id="correction-explain" class="correction-explain"></p>
+        <p class="correction-correct-label">이렇게 말해보세요:</p>
+        <div class="es-row center">
+          <p id="correction-correct-es" class="correction-correct-es"></p>
+          <button id="btn-speak-correction" class="speaker-btn" aria-label="다시 듣기">🔊</button>
+        </div>
+        <button id="btn-correction-ok" class="btn-primary">알겠어요</button>
+      </div>
+    </div>
+
+    <!-- 대화 종료 토스트 -->
+    <div id="end-overlay" class="overlay hidden">
+      <div class="end-card">
+        <div id="end-emoji" class="end-emoji">💚</div>
+        <p id="end-message" class="end-message"></p>
+        <button id="btn-end-ok" class="btn-primary">마을로 돌아가기</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 단어장 화면 -->
+  <section id="screen-journal" class="screen hidden">
+    <header class="map-header">
+      <button id="btn-back-from-journal" class="icon-btn">←</button>
+      <div class="journal-title">📔 단어장</div>
+      <div style="width:2.2rem"></div>
+    </header>
+    <div id="journal-filters" class="journal-filters"></div>
+    <div id="journal-list" class="journal-list"></div>
+  </section>
+
+</div>
+
+<script src="js/data/npcs.js"></script>
+<script src="js/data/dialogues.js"></script>
+<script src="js/state.js"></script>
+<script src="js/tts.js"></script>
+<script src="js/map.js"></script>
+<script src="js/dialogue.js"></script>
+<script src="js/journal.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

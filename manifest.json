@@ -1,0 +1,11 @@
+{
+  "name": "스페인어 마을",
+  "short_name": "스페인어 마을",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#5b8c5a",
+  "theme_color": "#5b8c5a",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
