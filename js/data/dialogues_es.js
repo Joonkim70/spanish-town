@@ -2440,6 +2440,1070 @@ const DIALOGUES_ES = {
             ]
           }
         }
+      },
+      {
+        "topicLabel": "좋아하는 시인",
+        "start": "n1",
+        "endMessage": "돈 안드레스와 좋아하는 시인 이야기를 나누며 따뜻한 시간을 보냈어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "andres",
+            "text_es": "Cuando era joven, leía poemas de Pablo Neruda todas las noches. ¿Tienes un poeta favorito?",
+            "text_ko": "젊었을 때 나는 매일 밤 파블로 네루다의 시를 읽곤 했어. 너는 좋아하는 시인이 있어?",
+            "options": [
+              {
+                "text_es": "Sí, de niña leía mucha poesía de Gabriela Mistral.",
+                "text_ko_hint": "응, 어릴 때 나는 가브리엘라 미스트랄의 시를 많이 읽곤 했어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Sí, de niña leí mucha poesía de Gabriela Mistral.",
+                "text_ko_hint": "응, 어릴 때 나는 가브리엘라 미스트랄의 시를 많이 읽곤 했어.",
+                "correct": false,
+                "correctionKo": "어릴 때 반복적으로 하던 습관을 말할 때는 불완료과거 'leía'를 써요. 'leí'는 한 번 끝난 행동을 나타내는 단순과거라서 '~하곤 했다'는 습관에는 어울리지 않아요.",
+                "correctEs": "Sí, de niña leía mucha poesía de Gabriela Mistral.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "andres",
+            "text_es": "Ayer leí un poema nuevo de un autor joven. Fue muy hermoso.",
+            "text_ko": "어제 나는 젊은 작가의 새로운 시 한 편을 읽었어. 정말 아름다웠어.",
+            "options": [
+              {
+                "text_es": "Yo también leí algo interesante ayer.",
+                "text_ko_hint": "나도 어제 흥미로운 걸 읽었어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Yo también leía algo interesante ayer.",
+                "text_ko_hint": "나도 어제 흥미로운 걸 읽었어.",
+                "correct": false,
+                "correctionKo": "'ayer'(어제)처럼 특정 시점을 가리키는 말이 있으면 완료된 행동이니 단순과거 'leí'를 써야 해요. 'leía'는 습관이나 배경 상황을 묘사할 때 써요.",
+                "correctEs": "Yo también leí algo interesante ayer.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "andres",
+            "text_es": "Me encantaría prestarte un libro de poemas algún día.",
+            "text_ko": "언젠가 너에게 시집 한 권을 빌려주고 싶어.",
+            "options": [
+              {
+                "text_es": "¡Me encantaría! Antes leía poco, pero ahora quiero leer más.",
+                "text_ko_hint": "좋아요! 예전엔 별로 안 읽었는데, 이제는 더 읽고 싶어요.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Me encantaría! Antes leí poco, pero ahora quiero leer más.",
+                "text_ko_hint": "좋아요! 예전엔 별로 안 읽었는데, 이제는 더 읽고 싶어요.",
+                "correct": false,
+                "correctionKo": "'antes'(예전에)로 과거의 지속적인 상태나 습관을 말할 때는 불완료과거 'leía'를 써요. 'leí'는 완료된 사건 하나를 가리켜서 여기엔 어색해요.",
+                "correctEs": "¡Me encantaría! Antes leía poco, pero ahora quiero leer más.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "시 낭송회",
+        "start": "n1",
+        "endMessage": "돈 안드레스와 함께 시 낭송회 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "andres",
+            "text_es": "El viernes hay un recital de poesía en la librería. ¿Quieres venir?",
+            "text_ko": "금요일에 책방에서 시 낭송회가 있어. 올래?",
+            "options": [
+              {
+                "text_es": "¡Sí! ¿Hay muchos poetas invitados?",
+                "text_ko_hint": "응! 초대된 시인이 많이 있어?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "¡Sí! ¿Está muchos poetas invitados?",
+                "text_ko_hint": "응! 초대된 시인이 많이 있어?",
+                "correct": false,
+                "correctionKo": "여러 사람이나 사물이 '있다'는 존재를 말할 때는 'hay'를 써요. 'está'는 이미 정해진 대상의 위치를 말할 때 쓰는 동사라서 여기엔 맞지 않아요.",
+                "correctEs": "¡Sí! ¿Hay muchos poetas invitados?",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "andres",
+            "text_es": "Sí, y también hay café gratis para los invitados.",
+            "text_ko": "응, 그리고 손님들을 위한 무료 커피도 있어.",
+            "options": [
+              {
+                "text_es": "Qué bien, ¿dónde hay sillas para sentarnos?",
+                "text_ko_hint": "좋다, 앉을 의자는 어디에 있어?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Qué bien, ¿dónde están sillas para sentarnos?",
+                "text_ko_hint": "좋다, 앉을 의자는 어디에 있어?",
+                "correct": false,
+                "correctionKo": "특정하지 않은 '어떤 의자들'이 있는지 물을 때는 'hay'를 써요. 'están'은 이미 알고 있는 특정한 대상의 위치를 물을 때 쓰기 때문에 'las sillas están'처럼 관사가 있어야 해요.",
+                "correctEs": "Qué bien, ¿dónde hay sillas para sentarnos?",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "andres",
+            "text_es": "Va a ser una noche especial. Espero que puedas venir.",
+            "text_ko": "특별한 밤이 될 거야. 네가 올 수 있으면 좋겠다.",
+            "options": [
+              {
+                "text_es": "Ahí estaré, no hay problema.",
+                "text_ko_hint": "거기 있을게, 문제없어.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "Ahí estaré, no está problema.",
+                "text_ko_hint": "거기 있을게, 문제없어.",
+                "correct": false,
+                "correctionKo": "'문제가 없다'처럼 존재 여부를 말할 때는 'no hay problema'라고 해요. 'estar'는 위치나 상태를 말할 때 쓰는 동사라 이 표현에는 어울리지 않아요.",
+                "correctEs": "Ahí estaré, no hay problema.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "글쓰기 워크숍",
+        "start": "n1",
+        "endMessage": "돈 안드레스와 글쓰기 워크숍에 대해 이야기했어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "andres",
+            "text_es": "Este sábado doy un pequeño taller de escritura aquí. El tema es muy interesante.",
+            "text_ko": "이번 토요일에 여기서 작은 글쓰기 워크숍을 열어. 주제가 정말 흥미로워.",
+            "options": [
+              {
+                "text_es": "Qué interesante, ¿el taller es largo?",
+                "text_ko_hint": "흥미롭다, 워크숍이 길어?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Qué interesante, ¿el taller está largo?",
+                "text_ko_hint": "흥미롭다, 워크숍이 길어?",
+                "correct": false,
+                "correctionKo": "어떤 것의 길이처럼 원래 성질이나 특징을 말할 때는 'ser'를 써요. 'estar'는 일시적인 상태나 위치를 말할 때 쓰는 동사라서 여기엔 맞지 않아요.",
+                "correctEs": "Qué interesante, ¿el taller es largo?",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "andres",
+            "text_es": "No, es corto. Y hoy el salón está muy ordenado para los estudiantes.",
+            "text_ko": "아니, 짧아. 그리고 오늘 학생들을 위해 방이 아주 정리되어 있어.",
+            "options": [
+              {
+                "text_es": "Qué bien, el salón está muy limpio hoy.",
+                "text_ko_hint": "좋다, 오늘 방이 아주 깨끗하네.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Qué bien, el salón es muy limpio hoy.",
+                "text_ko_hint": "좋다, 오늘 방이 아주 깨끗하네.",
+                "correct": false,
+                "correctionKo": "'오늘'처럼 일시적인 상태(방금 청소해서 깨끗함)를 말할 때는 'estar'를 써요. 'ser'는 원래부터 가진 변하지 않는 성질을 말할 때 써서 여기엔 어색해요.",
+                "correctEs": "Qué bien, el salón está muy limpio hoy.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "andres",
+            "text_es": "¿Te gustaría participar en el taller conmigo?",
+            "text_ko": "나랑 같이 워크숍에 참여하고 싶어?",
+            "options": [
+              {
+                "text_es": "Sí, me encantaría. Estoy un poco nerviosa, pero será divertido.",
+                "text_ko_hint": "응, 정말 좋아. 조금 긴장되지만 재미있을 거야.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "Sí, me encantaría. Soy un poco nerviosa, pero será divertido.",
+                "text_ko_hint": "응, 정말 좋아. 조금 긴장되지만 재미있을 거야.",
+                "correct": false,
+                "correctionKo": "지금 이 순간 느끼는 감정 상태(긴장됨)를 말할 때는 'estar'를 써요. 'ser nervioso/a'는 '원래 긴장을 잘 타는 성격'이라는 뜻이 되어서, 지금 느끼는 감정을 말하려는 이 상황에는 어울리지 않아요.",
+                "correctEs": "Sí, me encantaría. Estoy un poco nerviosa, pero será divertido.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "오래된 희귀본",
+        "start": "n1",
+        "endMessage": "돈 안드레스와 오래된 희귀본 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "andres",
+            "text_es": "Ayer un cliente vino y me trajo un libro muy antiguo. ¡Fue una sorpresa increíble!",
+            "text_ko": "어제 한 손님이 와서 아주 오래된 책 한 권을 가져다줬어. 정말 놀라운 일이었어!",
+            "options": [
+              {
+                "text_es": "¡Qué emoción! ¿Y qué dijo el cliente sobre el libro?",
+                "text_ko_hint": "정말 신난다! 그런데 그 손님이 책에 대해 뭐라고 했어?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "¡Qué emoción! ¿Y qué deció el cliente sobre el libro?",
+                "text_ko_hint": "정말 신난다! 그런데 그 손님이 책에 대해 뭐라고 했어?",
+                "correct": false,
+                "correctionKo": "'decir'(말하다)의 단순과거는 불규칙 동사라서 'decir → dije, dijiste, dijo...'로 변해요. 'deció'라는 형태는 존재하지 않아요.",
+                "correctEs": "¡Qué emoción! ¿Y qué dijo el cliente sobre el libro?",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "andres",
+            "text_es": "Dijo que fue de su abuela y que tuvo el libro por muchos años.",
+            "text_ko": "그의 할머니 책이었고, 그가 그 책을 오랫동안 가지고 있었다고 했어.",
+            "options": [
+              {
+                "text_es": "Qué historia tan bonita. ¿Tuviste tiempo de leerlo?",
+                "text_ko_hint": "정말 아름다운 이야기다. 그거 읽어볼 시간이 있었어?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Qué historia tan bonita. ¿Tenistes tiempo de leerlo?",
+                "text_ko_hint": "정말 아름다운 이야기다. 그거 읽어볼 시간이 있었어?",
+                "correct": false,
+                "correctionKo": "'tener'의 2인칭 단순과거는 'tuviste'예요. 'tenistes'는 규칙 동사처럼 잘못 만든 형태라서 틀려요. 'tener'는 'tuve, tuviste, tuvo...'로 불규칙하게 변해요.",
+                "correctEs": "Qué historia tan bonita. ¿Tuviste tiempo de leerlo?",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "andres",
+            "text_es": "Sí, lo leí anoche. Fue una historia muy conmovedora.",
+            "text_ko": "응, 어젯밤에 읽었어. 정말 감동적인 이야기였어.",
+            "options": [
+              {
+                "text_es": "Qué bueno que vino ese cliente. Fue un regalo especial para ti.",
+                "text_ko_hint": "그 손님이 와줘서 정말 다행이다. 너에게 특별한 선물이었네.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "Qué bueno que venió ese cliente. Fue un regalo especial para ti.",
+                "text_ko_hint": "그 손님이 와줘서 정말 다행이다. 너에게 특별한 선물이었네.",
+                "correct": false,
+                "correctionKo": "'venir'(오다)의 단순과거 3인칭 단수는 'vino'예요. 'venió'는 잘못된 형태이니 조심해야 해요.",
+                "correctEs": "Qué bueno que vino ese cliente. Fue un regalo especial para ti.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "손님에게 책 추천하기",
+        "start": "n1",
+        "endMessage": "돈 안드레스와 함께 손님에게 책을 추천해봤어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "andres",
+            "text_es": "Una clienta busca una novela romántica. ¿Tienes alguna recomendación?",
+            "text_ko": "한 손님이 로맨스 소설을 찾고 있어. 추천할 만한 게 있어?",
+            "options": [
+              {
+                "text_es": "Sí, tengo una. La recomiendo mucho.",
+                "text_ko_hint": "응, 하나 있어. 그거 정말 추천해.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Sí, tengo una. La recomiendo mucho a ella.",
+                "text_ko_hint": "응, 하나 있어. 그거 정말 추천해.",
+                "correct": false,
+                "correctionKo": "직접목적어 대명사 'la'(그것을)를 이미 썼기 때문에 'a ella'까지 다시 쓰면 같은 의미가 중복돼서 어색해요. 대명사만으로 충분해요.",
+                "correctEs": "Sí, tengo una. La recomiendo mucho.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "andres",
+            "text_es": "¿Dónde está ese libro? No lo veo en el estante.",
+            "text_ko": "그 책이 어디 있어? 책장에서 안 보이네.",
+            "options": [
+              {
+                "text_es": "Lo tengo aquí, en el escritorio.",
+                "text_ko_hint": "그거 여기 책상 위에 있어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Tengo aquí, en el escritorio.",
+                "text_ko_hint": "그거 여기 책상 위에 있어.",
+                "correct": false,
+                "correctionKo": "'그것을 가지고 있다'라고 할 때는 직접목적어 대명사 'lo'를 꼭 넣어야 해요. 'lo' 없이 'Tengo aquí'라고 하면 무엇을 가지고 있는지 빠져서 문장이 어색해져요.",
+                "correctEs": "Lo tengo aquí, en el escritorio.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "andres",
+            "text_es": "Perfecto, se lo voy a mostrar a la clienta ahora mismo.",
+            "text_ko": "완벽해, 지금 바로 손님에게 그걸 보여줄게.",
+            "options": [
+              {
+                "text_es": "Muy bien, espero que le guste.",
+                "text_ko_hint": "좋아, 마음에 들었으면 좋겠다.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "Muy bien, espero que la guste.",
+                "text_ko_hint": "좋아, 마음에 들었으면 좋겠다.",
+                "correct": false,
+                "correctionKo": "'gustar' 앞에는 간접목적어 대명사(me, te, le, nos, les)를 써요. 여기서는 손님(그녀)에게 마음에 드는 거니까 'le'를 써야 해요. 'la'는 직접목적어라서 이 자리에는 맞지 않아요.",
+                "correctEs": "Muy bien, espero que le guste.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "독서 모임",
+        "start": "n1",
+        "endMessage": "돈 안드레스와 독서 모임 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "andres",
+            "text_es": "El club de lectura se reúne cada mes. ¿Quieres unirte al grupo?",
+            "text_ko": "독서 모임은 매달 모여. 그룹에 함께할래?",
+            "options": [
+              {
+                "text_es": "Sí, me interesa mucho. ¿Les prestas libros a los miembros?",
+                "text_ko_hint": "응, 정말 관심 있어. 회원들에게 책을 빌려줘?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Sí, me interesa mucho. ¿Los prestas libros a los miembros?",
+                "text_ko_hint": "응, 정말 관심 있어. 회원들에게 책을 빌려줘?",
+                "correct": false,
+                "correctionKo": "'prestar'(빌려주다)처럼 '누구에게' 무언가를 주는 동사는 간접목적어 대명사 'les'(그들에게)를 써요. 'los'는 직접목적어(그들을)라서 여기엔 맞지 않아요.",
+                "correctEs": "Sí, me interesa mucho. ¿Les prestas libros a los miembros?",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "andres",
+            "text_es": "Claro, siempre les doy una copia antes de la reunión.",
+            "text_ko": "물론이지, 모임 전에 항상 그들에게 한 권씩 줘.",
+            "options": [
+              {
+                "text_es": "Qué generoso. ¿Me puedes dar una copia a mí también?",
+                "text_ko_hint": "정말 너그럽다. 나한테도 한 권 줄 수 있어?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Qué generoso. ¿Te puedo dar una copia a mí también?",
+                "text_ko_hint": "정말 너그럽다. 나한테도 한 권 줄 수 있어?",
+                "correct": false,
+                "correctionKo": "여기서는 '나에게 줄 수 있는지'를 묻는 거니까 간접목적어는 'me'(나에게)가 되어야 해요. 'te'(너에게)를 쓰면 반대로 안드레스에게 준다는 뜻이 되어서 의미가 틀려져요.",
+                "correctEs": "Qué generoso. ¿Me puedes dar una copia a mí también?",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "andres",
+            "text_es": "Por supuesto. Te la doy mañana sin falta.",
+            "text_ko": "물론이지. 내일 꼭 그거 줄게.",
+            "options": [
+              {
+                "text_es": "Gracias, te lo agradezco mucho.",
+                "text_ko_hint": "고마워, 정말 고맙게 생각해.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "Gracias, le agradezco mucho.",
+                "text_ko_hint": "고마워, 정말 고맙게 생각해.",
+                "correct": false,
+                "correctionKo": "여기서는 안드레스 본인(너)에게 고마움을 전하는 거니까 'te'(너에게)를 써야 해요. 'le'는 '그/그녀에게'라서 대화 상대가 아닌 제3자를 가리키게 되어 어색해요.",
+                "correctEs": "Gracias, te lo agradezco mucho.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "영화로 만들어진 소설",
+        "start": "n1",
+        "endMessage": "돈 안드레스와 소설의 영화화에 대해 이야기했어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "andres",
+            "text_es": "Hicieron una película de esta novela. Dicen que es la más famosa del director.",
+            "text_ko": "이 소설로 영화를 만들었어. 그 감독의 작품 중 가장 유명하다고 하더라.",
+            "options": [
+              {
+                "text_es": "¿En serio? Debe ser mejor que el libro, entonces.",
+                "text_ko_hint": "정말? 그럼 책보다 더 나은가 보다.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "¿En serio? Debe ser más bueno que el libro, entonces.",
+                "text_ko_hint": "정말? 그럼 책보다 더 나은가 보다.",
+                "correct": false,
+                "correctionKo": "'bueno'(좋은)의 비교급은 불규칙이라서 'más bueno'가 아니라 'mejor'라고 해요. 영어의 good-better처럼 스페인어도 특별한 형태를 써요.",
+                "correctEs": "¿En serio? Debe ser mejor que el libro, entonces.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "andres",
+            "text_es": "No sé, para mí el libro siempre es mejor que la película.",
+            "text_ko": "글쎄, 나한테는 늘 책이 영화보다 더 나아.",
+            "options": [
+              {
+                "text_es": "Estoy de acuerdo. El libro es más profundo que la película.",
+                "text_ko_hint": "동의해. 책이 영화보다 더 깊이 있어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Estoy de acuerdo. El libro es más profundo que a película.",
+                "text_ko_hint": "동의해. 책이 영화보다 더 깊이 있어.",
+                "correct": false,
+                "correctionKo": "비교할 때는 '~보다'라는 뜻으로 'que'를 써야 해요. 'a'는 방향이나 대상을 나타내는 전치사라서 비교 표현에는 맞지 않아요.",
+                "correctEs": "Estoy de acuerdo. El libro es más profundo que la película.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "andres",
+            "text_es": "Esta novela es, para mí, la mejor de todo el siglo veinte.",
+            "text_ko": "이 소설은 나한테는 20세기 최고의 작품이야.",
+            "options": [
+              {
+                "text_es": "Wow, es una gran recomendación entonces.",
+                "text_ko_hint": "와, 그럼 정말 대단한 추천이네.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "Wow, es una más grande recomendación entonces.",
+                "text_ko_hint": "와, 그럼 정말 대단한 추천이네.",
+                "correct": false,
+                "correctionKo": "'grande'(큰/대단한)가 명사 앞에 올 때는 'gran'으로 줄여 쓰고, 'más'는 필요 없어요. 'una gran recomendación'처럼 그냥 'gran'만 쓰면 충분해요.",
+                "correctEs": "Wow, es una gran recomendación entonces.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "좋아하는 작가의 전기",
+        "start": "n1",
+        "endMessage": "돈 안드레스와 작가의 삶에 대해 이야기했어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "andres",
+            "text_es": "Estoy leyendo la biografía de mi escritor favorito. ¿Conoces a Isabel Allende?",
+            "text_ko": "내가 가장 좋아하는 작가의 전기를 읽고 있어. 이사벨 아옌데를 알아?",
+            "options": [
+              {
+                "text_es": "Sí, la conozco. He leído dos novelas suyas.",
+                "text_ko_hint": "응, 알아. 그녀의 소설 두 편을 읽어봤어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Sí, la sé. He leído dos novelas suyas.",
+                "text_ko_hint": "응, 알아. 그녀의 소설 두 편을 읽어봤어.",
+                "correct": false,
+                "correctionKo": "사람을 '안다/알고 있다'라고 할 때는 'conocer'를 써요. 'saber'는 정보나 사실을 안다는 뜻이라서 사람 앞에는 쓰지 않아요.",
+                "correctEs": "Sí, la conozco. He leído dos novelas suyas.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "andres",
+            "text_es": "¿Sabes que ella empezó a escribir muy tarde en su vida?",
+            "text_ko": "그녀가 인생에서 아주 늦게 글쓰기를 시작했다는 거 알아?",
+            "options": [
+              {
+                "text_es": "No, no lo sabía. Qué interesante.",
+                "text_ko_hint": "아니, 그건 몰랐어. 정말 흥미롭다.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "No, no lo conocía. Qué interesante.",
+                "text_ko_hint": "아니, 그건 몰랐어. 정말 흥미롭다.",
+                "correct": false,
+                "correctionKo": "어떤 사실이나 정보를 몰랐다고 할 때는 'saber'를 써요. 'conocer'는 사람이나 장소에 익숙하다는 뜻이라서 이런 사실 정보에는 어울리지 않아요.",
+                "correctEs": "No, no lo sabía. Qué interesante.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "andres",
+            "text_es": "Deberías leer esta biografía. Vas a conocerla mucho mejor.",
+            "text_ko": "이 전기를 꼭 읽어봐. 그녀에 대해 훨씬 더 잘 알게 될 거야.",
+            "options": [
+              {
+                "text_es": "Claro, quiero conocer más su historia.",
+                "text_ko_hint": "그럼, 그녀의 이야기를 더 알고 싶어.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "Claro, quiero saber más su historia.",
+                "text_ko_hint": "그럼, 그녀의 이야기를 더 알고 싶어.",
+                "correct": false,
+                "correctionKo": "어떤 사람의 삶이나 이야기에 '더 친숙해지고 싶다'는 뜻일 때는 'conocer'가 자연스러워요. 'saber'는 구체적인 사실이나 정보를 안다고 할 때 쓰는데, 여기서는 그 사람의 이야기 전체와 친해지고 싶다는 뜻이라 'conocer'가 맞아요.",
+                "correctEs": "Claro, quiero conocer más su historia.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "신문 칼럼",
+        "start": "n1",
+        "endMessage": "돈 안드레스와 신문 칼럼 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "andres",
+            "text_es": "Leí una columna esta mañana que hablaba sobre el futuro de los libros.",
+            "text_ko": "오늘 아침에 책의 미래에 대해 이야기하는 칼럼을 읽었어.",
+            "options": [
+              {
+                "text_es": "Qué interesante. ¿Es un tema que te preocupa?",
+                "text_ko_hint": "흥미롭다. 그게 네가 걱정하는 주제야?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Qué interesante. ¿Es un tema qué te preocupa?",
+                "text_ko_hint": "흥미롭다. 그게 네가 걱정하는 주제야?",
+                "correct": false,
+                "correctionKo": "관계대명사로 '~하는'이라는 뜻으로 문장을 연결할 때는 강세 없는 'que'를 써요. 강세가 있는 'qué'는 의문문에서 '무엇'이라는 뜻으로만 써요.",
+                "correctEs": "Qué interesante. ¿Es un tema que te preocupa?",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "andres",
+            "text_es": "Un poco. Pero el periodista que escribió la columna es muy optimista.",
+            "text_ko": "조금은. 하지만 그 칼럼을 쓴 기자는 아주 낙관적이더라.",
+            "options": [
+              {
+                "text_es": "Qué bueno. Es un punto de vista que me gusta.",
+                "text_ko_hint": "잘됐다. 내가 좋아하는 관점이네.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Qué bueno. Es un punto de vista quien me gusta.",
+                "text_ko_hint": "잘됐다. 내가 좋아하는 관점이네.",
+                "correct": false,
+                "correctionKo": "사물(관점)을 가리킬 때는 관계대명사 'que'를 써요. 'quien'은 사람을 가리킬 때만 쓰는 관계대명사라서 여기엔 맞지 않아요.",
+                "correctEs": "Qué bueno. Es un punto de vista que me gusta.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "andres",
+            "text_es": "Te voy a guardar el periódico. El periodista, quien es amigo mío, escribe muy bien.",
+            "text_ko": "그 신문 남겨둘게. 그 기자는, 내 친구인데, 글을 정말 잘 써.",
+            "options": [
+              {
+                "text_es": "Gracias, me encantaría leer a alguien que escribe tan bien.",
+                "text_ko_hint": "고마워, 그렇게 글을 잘 쓰는 사람의 글을 읽고 싶어.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "Gracias, me encantaría leer a alguien quien escribe tan bien.",
+                "text_ko_hint": "고마워, 그렇게 글을 잘 쓰는 사람의 글을 읽고 싶어.",
+                "correct": false,
+                "correctionKo": "일상 대화에서는 사람을 가리킬 때도 'que'를 훨씬 더 많이 써요. 'quien'은 콤마로 구분된 삽입절이나 좀 더 격식 있는 문장에서 주로 쓰여서, 이 문장에는 'que'가 더 자연스러워요.",
+                "correctEs": "Gracias, me encantaría leer a alguien que escribe tan bien.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "쓰고 있는 단편 소설",
+        "start": "n1",
+        "endMessage": "돈 안드레스와 그가 쓰고 있는 단편 소설 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "andres",
+            "text_es": "Acabo de terminar el primer capítulo de mi cuento. Estoy muy contento.",
+            "text_ko": "방금 내 단편 소설 첫 장을 끝냈어. 정말 기분이 좋아.",
+            "options": [
+              {
+                "text_es": "¡Felicidades! ¿De qué trata el cuento?",
+                "text_ko_hint": "축하해! 그 소설은 무엇에 관한 거야?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "¡Felicidades! ¿De qué trata de el cuento?",
+                "text_ko_hint": "축하해! 그 소설은 무엇에 관한 거야?",
+                "correct": false,
+                "correctionKo": "'tratar de'(~에 관한 것이다)는 이미 'de'를 포함하고 있어서 'trata de qué'처럼 물을 때는 'de'를 한 번만 써요. 'trata de el cuento'처럼 두 번 쓰면 어색해요. 여기서는 의문사 다음 바로 동사가 오면 돼요.",
+                "correctEs": "¡Felicidades! ¿De qué trata el cuento?",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "andres",
+            "text_es": "Trata de un viejo librero que encuentra una carta misteriosa.",
+            "text_ko": "신비한 편지를 발견한 늙은 책방 주인에 관한 이야기야.",
+            "options": [
+              {
+                "text_es": "Qué intrigante. Acabo de leer algo parecido la semana pasada.",
+                "text_ko_hint": "정말 흥미진진하다. 지난주에 비슷한 걸 막 읽었어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Qué intrigante. Acabo leer algo parecido la semana pasada.",
+                "text_ko_hint": "정말 흥미진진하다. 지난주에 비슷한 걸 막 읽었어.",
+                "correct": false,
+                "correctionKo": "'방금 ~했다'라는 표현은 'acabar de + 동사원형'이에요. 'de'를 빼면 문법적으로 틀린 문장이 되니 꼭 넣어야 해요.",
+                "correctEs": "Qué intrigante. Acabo de leer algo parecido la semana pasada.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "andres",
+            "text_es": "Acabo de decidir el título. Se va a llamar 'La carta del librero'.",
+            "text_ko": "방금 제목도 정했어. '책방 주인의 편지'라고 부를 거야.",
+            "options": [
+              {
+                "text_es": "Me encanta el título. Acabas de crear algo hermoso.",
+                "text_ko_hint": "제목이 정말 마음에 들어. 방금 아름다운 걸 만들었네.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "Me encanta el título. Acabas crear algo hermoso.",
+                "text_ko_hint": "제목이 정말 마음에 들어. 방금 아름다운 걸 만들었네.",
+                "correct": false,
+                "correctionKo": "'막 ~을 했다'는 'acabar de + 동사원형' 구조를 항상 지켜야 해요. 'acabas crear'처럼 'de'를 빠뜨리면 틀린 문장이 돼요.",
+                "correctEs": "Me encanta el título. Acabas de crear algo hermoso.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "어린 시절의 독서 추억",
+        "start": "n1",
+        "endMessage": "돈 안드레스와 어린 시절의 독서 추억을 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "andres",
+            "text_es": "De niño, leía debajo de un árbol grande cerca de mi casa.",
+            "text_ko": "어렸을 때, 나는 집 근처 큰 나무 아래에서 책을 읽곤 했어.",
+            "options": [
+              {
+                "text_es": "Qué lindo recuerdo. Yo leía en la cama con una lámpara pequeña.",
+                "text_ko_hint": "정말 예쁜 추억이다. 나는 작은 램프를 켜고 침대에서 책을 읽곤 했어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Qué lindo recuerdo. Yo leí en la cama con una lámpara pequeña.",
+                "text_ko_hint": "정말 예쁜 추억이다. 나는 작은 램프를 켜고 침대에서 책을 읽곤 했어.",
+                "correct": false,
+                "correctionKo": "어릴 적 반복되던 습관을 말할 때는 불완료과거 'leía'를 써요. 'leí'는 한 번의 완료된 행동을 나타내서 '~하곤 했다'는 뜻에는 어울리지 않아요.",
+                "correctEs": "Qué lindo recuerdo. Yo leía en la cama con una lámpara pequeña.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "andres",
+            "text_es": "¿Tenías un libro favorito de pequeña?",
+            "text_ko": "어릴 때 좋아하던 책이 있었어?",
+            "options": [
+              {
+                "text_es": "Sí, tenía un libro de cuentos que leía todas las semanas.",
+                "text_ko_hint": "응, 매주 읽던 동화책이 하나 있었어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Sí, tuve un libro de cuentos que leía todas las semanas.",
+                "text_ko_hint": "응, 매주 읽던 동화책이 하나 있었어.",
+                "correct": false,
+                "correctionKo": "예전에 오랫동안 '가지고 있었던' 상태를 말할 때는 불완료과거 'tenía'가 자연스러워요. 'tuve'는 짧고 완료된 순간을 가리켜서 '가지고 있었다'는 지속적인 상태에는 어울리지 않아요.",
+                "correctEs": "Sí, tenía un libro de cuentos que leía todas las semanas.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "andres",
+            "text_es": "Esos recuerdos son un tesoro. La lectura marcó mi vida para siempre.",
+            "text_ko": "그런 추억은 보물이야. 독서가 내 인생을 영원히 바꿔놨어.",
+            "options": [
+              {
+                "text_es": "Totalmente de acuerdo. Leer de niño cambia cómo ves el mundo.",
+                "text_ko_hint": "완전히 동감이야. 어릴 때 책을 읽는 건 세상을 보는 방식을 바꿔놔.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "Totalmente de acuerdo. Leía de niño cambia cómo ves el mundo.",
+                "text_ko_hint": "완전히 동감이야. 어릴 때 책을 읽는 건 세상을 보는 방식을 바꿔놔.",
+                "correct": false,
+                "correctionKo": "일반적인 진리나 지금도 유효한 생각을 말할 때는 동사원형 'leer'를 명사처럼 문장의 주어로 써요. 'leía'는 과거 시제라서 이렇게 일반적인 이야기를 할 때는 어울리지 않아요.",
+                "correctEs": "Totalmente de acuerdo. Leer de niño cambia cómo ves el mundo.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "도서관 방문",
+        "start": "n1",
+        "endMessage": "돈 안드레스와 도서관 방문 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "andres",
+            "text_es": "Ayer caminé por el centro para ir a la biblioteca.",
+            "text_ko": "어제 도서관에 가려고 시내를 걸어갔어.",
+            "options": [
+              {
+                "text_es": "¿Fuiste por la calle principal o por el parque?",
+                "text_ko_hint": "큰길로 갔어, 아니면 공원 쪽으로 갔어?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "¿Fuiste para la calle principal o para el parque?",
+                "text_ko_hint": "큰길로 갔어, 아니면 공원 쪽으로 갔어?",
+                "correct": false,
+                "correctionKo": "어떤 경로나 장소를 '통해서/지나서' 이동한다고 할 때는 'por'를 써요. 'para'는 목적지나 목적을 말할 때 쓰기 때문에 여기엔 맞지 않아요.",
+                "correctEs": "¿Fuiste por la calle principal o por el parque?",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "andres",
+            "text_es": "Fui por el parque. Fui a la biblioteca para buscar un libro raro.",
+            "text_ko": "공원 쪽으로 갔어. 희귀한 책을 찾으려고 도서관에 갔어.",
+            "options": [
+              {
+                "text_es": "¿Y lo encontraste? Debiste caminar mucho para llegar.",
+                "text_ko_hint": "그래서 찾았어? 도착하려고 많이 걸었겠다.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "¿Y lo encontraste? Debiste caminar mucho por llegar.",
+                "text_ko_hint": "그래서 찾았어? 도착하려고 많이 걸었겠다.",
+                "correct": false,
+                "correctionKo": "'~하기 위해서'라는 목적을 말할 때는 'para + 동사원형'을 써요. 'por'는 이유나 경로를 말할 때 쓰기 때문에 '도착하기 위해서'라는 목적에는 'para'가 맞아요.",
+                "correctEs": "¿Y lo encontraste? Debiste caminar mucho para llegar.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "andres",
+            "text_es": "Sí, lo encontré. Pagué muy poco por él, solo por suerte.",
+            "text_ko": "응, 찾았어. 운이 좋아서 아주 싸게 샀어.",
+            "options": [
+              {
+                "text_es": "Qué suerte. Ese libro es perfecto para tu colección.",
+                "text_ko_hint": "운이 좋았네. 그 책은 네 소장품으로 딱이야.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "Qué suerte. Ese libro es perfecto por tu colección.",
+                "text_ko_hint": "운이 좋았네. 그 책은 네 소장품으로 딱이야.",
+                "correct": false,
+                "correctionKo": "'~을 위해, ~에게 알맞은'이라는 목적이나 용도를 말할 때는 'para'를 써요. 'por'는 원인이나 대가를 나타낼 때 쓰기 때문에 여기엔 어울리지 않아요.",
+                "correctEs": "Qué suerte. Ese libro es perfecto para tu colección.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "도서 박람회",
+        "start": "n1",
+        "endMessage": "돈 안드레스와 도서 박람회 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "andres",
+            "text_es": "El mes que viene hay una feria del libro. Tengo un puesto pequeño ahí.",
+            "text_ko": "다음 달에 도서 박람회가 있어. 거기 작은 부스가 하나 있어.",
+            "options": [
+              {
+                "text_es": "Qué emocionante. ¿Cuánto cuesta la entrada?",
+                "text_ko_hint": "정말 신난다. 입장료가 얼마야?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Qué emocionante. ¿Cuánto cuestan la entrada?",
+                "text_ko_hint": "정말 신난다. 입장료가 얼마야?",
+                "correct": false,
+                "correctionKo": "'la entrada'(입장권)는 단수 명사라서 동사도 단수형인 'cuesta'를 써야 해요. 'cuestan'은 복수 명사에 쓰는 형태예요.",
+                "correctEs": "Qué emocionante. ¿Cuánto cuesta la entrada?",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "andres",
+            "text_es": "La entrada cuesta cincuenta pesos, pero los libros son muy baratos ahí.",
+            "text_ko": "입장료는 50페소인데, 거기 책들은 아주 저렴해.",
+            "options": [
+              {
+                "text_es": "Qué bien. ¿Los libros de tapa dura cuestan más?",
+                "text_ko_hint": "잘됐다. 양장본 책들은 더 비싸?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Qué bien. ¿Los libros de tapa dura cuesta más?",
+                "text_ko_hint": "잘됐다. 양장본 책들은 더 비싸?",
+                "correct": false,
+                "correctionKo": "'los libros'(책들)는 복수 명사라서 동사도 복수형인 'cuestan'을 써야 해요. 'cuesta'는 단수 명사에 쓰는 형태예요.",
+                "correctEs": "Qué bien. ¿Los libros de tapa dura cuestan más?",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "andres",
+            "text_es": "Un poco más, unos cien pesos cada uno. Pero valen la pena.",
+            "text_ko": "조금 더 비싸, 한 권에 100페소 정도. 하지만 그만한 가치가 있어.",
+            "options": [
+              {
+                "text_es": "Cien pesos no es mucho por un buen libro.",
+                "text_ko_hint": "좋은 책 한 권에 100페소는 그렇게 비싸지 않네.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "Cien pesos no son mucho por un buen libro.",
+                "text_ko_hint": "좋은 책 한 권에 100페소는 그렇게 비싸지 않네.",
+                "correct": false,
+                "correctionKo": "돈의 액수를 하나의 총액으로 말할 때는 단수 동사 'es'를 써요. 개별 동전이 아니라 '100페소라는 금액'을 하나로 보기 때문이에요.",
+                "correctEs": "Cien pesos no es mucho por un buen libro.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "번역된 책",
+        "start": "n1",
+        "endMessage": "돈 안드레스와 번역된 책 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "andres",
+            "text_es": "Este libro se tradujo del japonés. La traducción es excelente.",
+            "text_ko": "이 책은 일본어에서 번역됐어. 번역이 정말 훌륭해.",
+            "options": [
+              {
+                "text_es": "Qué interesante. ¿Se venden muchos libros traducidos aquí?",
+                "text_ko_hint": "흥미롭다. 여기서 번역서가 많이 팔려?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Qué interesante. ¿Se vende muchos libros traducidos aquí?",
+                "text_ko_hint": "흥미롭다. 여기서 번역서가 많이 팔려?",
+                "correct": false,
+                "correctionKo": "'se'를 이용한 수동 표현에서는 뒤에 오는 명사의 수에 동사를 맞춰요. 'muchos libros'(많은 책들)는 복수라서 'se venden'처럼 복수 동사를 써야 해요.",
+                "correctEs": "Qué interesante. ¿Se venden muchos libros traducidos aquí?",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "andres",
+            "text_es": "Sí, cada año se publican más novelas traducidas al español.",
+            "text_ko": "응, 매년 스페인어로 번역된 소설이 더 많이 출간돼.",
+            "options": [
+              {
+                "text_es": "Qué bueno. Así se conocen autores de todo el mundo.",
+                "text_ko_hint": "좋다. 그렇게 전 세계 작가들이 알려지는구나.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Qué bueno. Así se conoce autores de todo el mundo.",
+                "text_ko_hint": "좋다. 그렇게 전 세계 작가들이 알려지는구나.",
+                "correct": false,
+                "correctionKo": "'se'를 쓴 수동/무인칭 표현에서는 뒤에 오는 명사 'autores'(작가들, 복수)에 동사를 맞춰야 해요. 그래서 'se conocen'처럼 복수형이 맞아요.",
+                "correctEs": "Qué bueno. Así se conocen autores de todo el mundo.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "andres",
+            "text_es": "Por eso me encanta este trabajo. Aquí se descubren mundos nuevos cada día.",
+            "text_ko": "그래서 이 일이 정말 좋아. 여기선 매일 새로운 세계가 발견되거든.",
+            "options": [
+              {
+                "text_es": "Es hermoso. Aquí se aprenden tantas cosas sobre otras culturas.",
+                "text_ko_hint": "정말 아름답다. 여기선 다른 문화에 대해 정말 많은 걸 배우게 되네.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "Es hermoso. Aquí se aprende tantas cosas sobre otras culturas.",
+                "text_ko_hint": "정말 아름답다. 여기선 다른 문화에 대해 정말 많은 걸 배우게 되네.",
+                "correct": false,
+                "correctionKo": "'tantas cosas'(그렇게 많은 것들)가 복수 명사라서 무인칭 'se' 표현도 복수 동사 'se aprenden'을 써야 자연스러워요.",
+                "correctEs": "Es hermoso. Aquí se aprenden tantas cosas sobre otras culturas.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
       }
     ]
   }
