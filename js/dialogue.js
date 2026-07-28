@@ -38,6 +38,37 @@ function renderDialogueNode() {
     btn.addEventListener("click", () => chooseOption(opt));
     optionsWrap.appendChild(btn);
   });
+
+  document.getElementById("voice-input").value = "";
+  document.getElementById("voice-feedback").classList.add("hidden");
+}
+
+function submitVoiceAnswer() {
+  if (!dlgState || dlgState.nodeId === "end") return;
+
+  const { npc, nodeId } = dlgState;
+  const node = DIALOGUES[npc.id].nodes[nodeId];
+  const input = document.getElementById("voice-input");
+  const feedback = document.getElementById("voice-feedback");
+  const spoken = input.value.trim();
+
+  if (!spoken) {
+    feedback.textContent = "먼저 마이크로 말하거나 입력해보세요.";
+    feedback.classList.remove("hidden");
+    return;
+  }
+
+  const { option, score } = matchSpokenToOption(spoken, node.options);
+
+  if (score < 0.35) {
+    feedback.textContent = "음... 잘 못 알아들었어요. 다시 말해보거나 아래 선택지를 눌러보세요.";
+    feedback.classList.remove("hidden");
+    return;
+  }
+
+  feedback.classList.add("hidden");
+  input.value = "";
+  chooseOption(option);
 }
 
 function chooseOption(opt) {
@@ -113,4 +144,13 @@ document.getElementById("btn-speak-npc").addEventListener("click", () => {
 
 document.getElementById("btn-speak-correction").addEventListener("click", () => {
   speakSpanish(document.getElementById("correction-correct-es").textContent);
+});
+
+document.getElementById("btn-voice-submit").addEventListener("click", submitVoiceAnswer);
+
+document.getElementById("voice-input").addEventListener("keydown", e => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    submitVoiceAnswer();
+  }
 });

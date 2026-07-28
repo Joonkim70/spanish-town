@@ -296,6 +296,51 @@ html, body {
 
 .option-btn:active { background: #f3ead9; }
 
+.voice-divider {
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  color: #9a8b76;
+  font-size: .8rem;
+  margin: 1.1rem 0 .6rem;
+}
+
+.voice-answer-row {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  gap: .5rem;
+}
+
+.voice-input {
+  flex: 1;
+  border: 2px solid var(--brown);
+  border-radius: 14px;
+  padding: .65rem .8rem;
+  font-size: .95rem;
+  background: white;
+  min-width: 0;
+}
+
+.btn-voice-submit {
+  flex-shrink: 0;
+  border: none;
+  background: var(--green-dark);
+  color: white;
+  font-weight: 700;
+  border-radius: 14px;
+  padding: 0 1rem;
+  font-size: .9rem;
+}
+
+.voice-feedback {
+  width: 100%;
+  max-width: 380px;
+  font-size: .85rem;
+  color: #a05a1c;
+  margin: .5rem 0 0;
+}
+
 /* ---------- 오버레이 ---------- */
 .overlay {
   position: absolute;

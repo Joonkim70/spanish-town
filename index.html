@@ -60,6 +60,21 @@
       </div>
 
       <div id="dlg-options" class="options-list"></div>
+
+      <div class="voice-divider">또는 직접 스페인어로 말해보기 🎤</div>
+      <div class="voice-answer-row">
+        <input
+          type="text"
+          id="voice-input"
+          class="voice-input"
+          placeholder="키보드의 마이크를 눌러 말해보세요"
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+        />
+        <button id="btn-voice-submit" class="btn-voice-submit">확인</button>
+      </div>
+      <p id="voice-feedback" class="voice-feedback hidden"></p>
     </div>
 
     <!-- 교정 오버레이 -->
@@ -103,6 +118,7 @@
 <script src="js/data/dialogues.js"></script>
 <script src="js/state.js"></script>
 <script src="js/tts.js"></script>
+<script src="js/voicematch.js"></script>
 <script src="js/map.js"></script>
 <script src="js/dialogue.js"></script>
 <script src="js/journal.js"></script>
