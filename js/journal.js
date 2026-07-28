@@ -9,7 +9,8 @@ function renderJournalFilters(appState) {
   const wrap = document.getElementById("journal-filters");
   wrap.innerHTML = "";
 
-  const chips = [{ id: "all", name: "전체" }, ...NPCS.map(n => ({ id: n.id, name: n.name }))];
+  const npcs = NPCS_BY_LANG[currentLanguage];
+  const chips = [{ id: "all", name: "전체" }, ...npcs.map(n => ({ id: n.id, name: n.name }))];
   chips.forEach(chip => {
     const btn = document.createElement("button");
     btn.className = "filter-chip" + (journalFilter === chip.id ? " active" : "");
@@ -26,7 +27,9 @@ function renderJournalList(appState) {
   const list = document.getElementById("journal-list");
   list.innerHTML = "";
 
-  const entries = appState.journal
+  const npcs = NPCS_BY_LANG[currentLanguage];
+  const journal = appState.perLang[currentLanguage].journal;
+  const entries = journal
     .filter(j => journalFilter === "all" || j.npcId === journalFilter)
     .slice()
     .reverse();
@@ -40,11 +43,11 @@ function renderJournalList(appState) {
   }
 
   entries.forEach(entry => {
-    const npc = NPCS.find(n => n.id === entry.npcId);
+    const npc = npcs.find(n => n.id === entry.npcId);
     const card = document.createElement("div");
     card.className = "journal-item";
     card.innerHTML = `
-      <p class="j-es">${entry.es}</p>
+      <p class="j-es">${entry.text}</p>
       <p class="j-ko">${entry.ko}</p>
       <p class="j-meta">${npc ? npc.emoji + " " + npc.name : ""} · ${entry.date}</p>
     `;

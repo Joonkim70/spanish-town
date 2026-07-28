@@ -1,6 +1,6 @@
 {
-  "name": "스페인어 마을",
-  "short_name": "스페인어 마을",
+  "name": "언어 마을",
+  "short_name": "언어 마을",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#5b8c5a",

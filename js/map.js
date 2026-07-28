@@ -2,7 +2,7 @@ let playerPos = { ...PLAYER_START };
 let isMoving = false;
 
 function npcAt(x, y) {
-  return NPCS.find(n => n.x === x && n.y === y);
+  return NPCS_BY_LANG[currentLanguage].find(n => n.x === x && n.y === y);
 }
 
 function isAdjacent(a, b) {
@@ -33,7 +33,7 @@ function renderVillage(state) {
         tile.textContent = npc.emoji;
         const heart = document.createElement("div");
         heart.className = "heart-badge";
-        heart.textContent = `💚${getAffinity(state, npc.id)}`;
+        heart.textContent = `💚${getAffinity(state, currentLanguage, npc.id)}`;
         tile.appendChild(heart);
       }
 
