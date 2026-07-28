@@ -2360,6 +2360,2210 @@ const DIALOGUES_ES = {
             ]
           }
         }
+      },
+      {
+        "topicLabel": "주말 계획",
+        "start": "n1",
+        "endMessage": "마테오와 신나는 주말 계획을 세웠어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "¿Qué vas a hacer este fin de semana?",
+            "text_ko": "이번 주말에 뭐 할 거야?",
+            "options": [
+              {
+                "text_es": "Voy a ver una película con mis amigos.",
+                "text_ko_hint": "친구들이랑 영화를 볼 거야.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Voy ver una película con mis amigos.",
+                "text_ko_hint": "친구들이랑 영화를 볼 거야.",
+                "correct": false,
+                "correctionKo": "'ir a + 동사원형'은 가까운 미래의 계획을 말할 때 쓰는 표현이에요. 'ir'와 동사원형 사이에 꼭 'a'를 넣어야 해요. 'a'를 빼먹으면 틀린 문장이 돼요.",
+                "correctEs": "Voy a ver una película con mis amigos.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "¡Qué bien! Yo voy a salir a caminar por el parque. ¿Tienes otros planes?",
+            "text_ko": "좋다! 나는 공원에서 산책하러 나갈 거야. 다른 계획도 있어?",
+            "options": [
+              {
+                "text_es": "También voy a estudiar un poco para el lunes.",
+                "text_ko_hint": "월요일을 위해서 공부도 좀 할 거야.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "También voy estudiar un poco para el lunes.",
+                "text_ko_hint": "월요일을 위해서 공부도 좀 할 거야.",
+                "correct": false,
+                "correctionKo": "잊지 마! 'ir a + 동사원형' 사이에는 항상 'a'가 들어가야 해요. 'voy estudiar'가 아니라 'voy a estudiar'예요.",
+                "correctEs": "También voy a estudiar un poco para el lunes.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "¿Vamos a ver una película juntos el próximo fin de semana?",
+            "text_ko": "다음 주말에 같이 영화 보러 갈까?",
+            "options": [
+              {
+                "text_es": "¡Sí! Vamos a ir al cine el sábado.",
+                "text_ko_hint": "좋아! 토요일에 영화관에 가자.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Sí! Vamos ir al cine el sábado.",
+                "text_ko_hint": "좋아! 토요일에 영화관에 가자.",
+                "correct": false,
+                "correctionKo": "'vamos a ir'처럼 'ir a + 동사원형'에서는 'a'를 빼면 안 돼요. 두 동사 사이에 항상 'a'가 필요해요.",
+                "correctEs": "¡Sí! Vamos a ir al cine el sábado.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "콘서트 티켓",
+        "start": "n1",
+        "endMessage": "마테오와 콘서트 이야기로 신났어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "¡Fui a un concierto increíble el fin de semana pasado! ¿Tú has ido a algún concierto?",
+            "text_ko": "지난 주말에 진짜 멋진 콘서트에 갔었어! 너도 콘서트 가본 적 있어?",
+            "options": [
+              {
+                "text_es": "Sí, fui a un concierto de rock el año pasado.",
+                "text_ko_hint": "응, 작년에 록 콘서트에 갔었어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Sí, fue a un concierto de rock el año pasado.",
+                "text_ko_hint": "응, 작년에 록 콘서트에 갔었어.",
+                "correct": false,
+                "correctionKo": "'ir' 동사의 단순과거에서 '나는 갔다'는 'fui'예요. 'fue'는 '그/그녀가 갔다'라는 뜻이라서 주어가 달라져요.",
+                "correctEs": "Sí, fui a un concierto de rock el año pasado.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "¿Y cómo pagaste las entradas? Yo pagué con tarjeta.",
+            "text_ko": "표는 어떻게 결제했어? 나는 카드로 결제했어.",
+            "options": [
+              {
+                "text_es": "Yo pagué en efectivo, fue más barato.",
+                "text_ko_hint": "나는 현금으로 냈어, 더 저렴했거든.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Yo pagé en efectivo, fue más barato.",
+                "text_ko_hint": "나는 현금으로 냈어, 더 저렴했거든.",
+                "correct": false,
+                "correctionKo": "'pagar'의 1인칭 단순과거는 'pagué'예요. g 뒤에 e가 오면 발음이 바뀌기 때문에 u를 넣어서 'gué'로 써야 해요. 'pagé'는 잘못된 철자예요.",
+                "correctEs": "Yo pagué en efectivo, fue más barato.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "La próxima vez deberíamos ir juntos a un concierto.",
+            "text_ko": "다음엔 우리 같이 콘서트에 가면 좋겠다.",
+            "options": [
+              {
+                "text_es": "¡Sí! Yo ya compré boletos para el festival de agosto.",
+                "text_ko_hint": "좋아! 나는 이미 8월 페스티벌 티켓을 샀어.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Sí! Yo ya comprí boletos para el festival de agosto.",
+                "text_ko_hint": "좋아! 나는 이미 8월 페스티벌 티켓을 샀어.",
+                "correct": false,
+                "correctionKo": "-ar로 끝나는 동사의 1인칭 단순과거 어미는 '-é'예요. 'comprar'의 과거형은 'compré'이고, 'comprí'는 -ir 동사 어미를 잘못 붙인 형태예요.",
+                "correctEs": "¡Sí! Yo ya compré boletos para el festival de agosto.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "비디오게임",
+        "start": "n1",
+        "endMessage": "마테오와 게임 이야기를 실컷 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Anoche jugué un videojuego nuevo por tres horas. ¿Tú juegas videojuegos?",
+            "text_ko": "어젯밤에 새로운 비디오게임을 세 시간 동안 했어. 너도 비디오게임 해?",
+            "options": [
+              {
+                "text_es": "Sí, ayer hice un torneo en línea con mis amigos.",
+                "text_ko_hint": "응, 어제 친구들이랑 온라인 토너먼트를 했어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Sí, ayer hací un torneo en línea con mis amigos.",
+                "text_ko_hint": "응, 어제 친구들이랑 온라인 토너먼트를 했어.",
+                "correct": false,
+                "correctionKo": "'hacer' 동사의 단순과거 1인칭형은 불규칙 형태인 'hice'예요. 규칙 동사처럼 '-í'를 붙이면 안 돼요.",
+                "correctEs": "Sí, ayer hice un torneo en línea con mis amigos.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "¿Ganaste o perdiste el torneo?",
+            "text_ko": "토너먼트에서 이겼어 아니면 졌어?",
+            "options": [
+              {
+                "text_es": "Gané las primeras rondas, pero perdí la final.",
+                "text_ko_hint": "처음 라운드들은 이겼는데, 결승에서는 졌어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Gané las primeras rondas, pero perdo la final.",
+                "text_ko_hint": "처음 라운드들은 이겼는데, 결승에서는 졌어.",
+                "correct": false,
+                "correctionKo": "'perder'의 1인칭 단순과거는 'perdí'예요. -er 동사는 단순과거에서 '-í' 어미를 붙여요. 'perdo'는 존재하지 않는 형태예요.",
+                "correctEs": "Gané las primeras rondas, pero perdí la final.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Deberíamos jugar juntos algún día.",
+            "text_ko": "언젠가 같이 게임 하면 좋겠다.",
+            "options": [
+              {
+                "text_es": "¡Claro! La semana pasada vi un torneo profesional en internet, fue increíble.",
+                "text_ko_hint": "물론이지! 지난주에 인터넷에서 프로 토너먼트를 봤는데, 정말 대단했어.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Claro! La semana pasada vide un torneo profesional en internet, fue increíble.",
+                "text_ko_hint": "물론이지! 지난주에 인터넷에서 프로 토너먼트를 봤는데, 정말 대단했어.",
+                "correct": false,
+                "correctionKo": "'ver' 동사의 단순과거 1인칭형은 짧은 불규칙 형태인 'vi'예요. 'vide'는 존재하지 않는 형태니 조심하세요.",
+                "correctEs": "¡Claro! La semana pasada vi un torneo profesional en internet, fue increíble.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "드라마 정주행",
+        "start": "n1",
+        "endMessage": "마테오와 드라마 정주행 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "El fin de semana me quedé en casa viendo una serie nueva todo el día.",
+            "text_ko": "주말에 집에 있으면서 하루 종일 새 드라마를 봤어.",
+            "options": [
+              {
+                "text_es": "Yo también me quedé en casa viendo series.",
+                "text_ko_hint": "나도 집에 있으면서 드라마를 봤어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Yo también quedé en casa viendo series.",
+                "text_ko_hint": "나도 집에 있으면서 드라마를 봤어.",
+                "correct": false,
+                "correctionKo": "'quedarse'는 재귀동사라서 주어에 맞는 재귀대명사가 꼭 필요해요. '나는'이면 'me quedé'라고 해야 하고, 'me'를 빼면 틀린 문장이 돼요.",
+                "correctEs": "Yo también me quedé en casa viendo series.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "¿Te divertiste con la serie o te aburriste?",
+            "text_ko": "드라마 보면서 재밌었어 아니면 지루했어?",
+            "options": [
+              {
+                "text_es": "Me divertí mucho, ¡no podía dejar de verla!",
+                "text_ko_hint": "정말 재밌었어, 멈출 수가 없었어!",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Divertí mucho, ¡no podía dejar de verla!",
+                "text_ko_hint": "정말 재밌었어, 멈출 수가 없었어!",
+                "correct": false,
+                "correctionKo": "'divertirse'(즐기다)도 재귀동사예요. '나는 즐거웠다'는 'me divertí'라고 해야 하고, 'me'를 빼먹으면 안 돼요.",
+                "correctEs": "Me divertí mucho, ¡no podía dejar de verla!",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "La última temporada se estrena pronto, ¡no puedo esperar!",
+            "text_ko": "마지막 시즌이 곧 나온대, 너무 기대돼!",
+            "options": [
+              {
+                "text_es": "¡Yo tampoco! Me voy a emocionar mucho viéndola.",
+                "text_ko_hint": "나도! 보면서 엄청 신날 것 같아.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Yo tampoco! Voy a emocionar mucho viéndola.",
+                "text_ko_hint": "나도! 보면서 엄청 신날 것 같아.",
+                "correct": false,
+                "correctionKo": "'emocionarse'(신나다)도 재귀동사라서 'me voy a emocionar'처럼 재귀대명사가 필요해요. 'me' 없이 쓰면 어색한 문장이 돼요.",
+                "correctEs": "¡Yo tampoco! Me voy a emocionar mucho viéndola.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "축구 경기",
+        "start": "n1",
+        "endMessage": "마테오와 축구 얘기로 들떴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "¿Puedes ir al partido de fútbol conmigo este sábado?",
+            "text_ko": "이번 토요일에 나랑 같이 축구 경기 보러 갈 수 있어?",
+            "options": [
+              {
+                "text_es": "Sí, puedo ir contigo, ¡me encanta el fútbol!",
+                "text_ko_hint": "응, 같이 갈 수 있어, 나 축구 완전 좋아해!",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Sí, puedo a ir contigo, ¡me encanta el fútbol!",
+                "text_ko_hint": "응, 같이 갈 수 있어, 나 축구 완전 좋아해!",
+                "correct": false,
+                "correctionKo": "'poder' 뒤에는 전치사 없이 바로 동사원형이 와요. 'ir a'와 헷갈려서 'a'를 넣는 실수를 자주 하는데, 'poder + 동사원형'에는 'a'가 필요 없어요.",
+                "correctEs": "Sí, puedo ir contigo, ¡me encanta el fútbol!",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "¿A qué hora puedes llegar al estadio?",
+            "text_ko": "경기장에는 몇 시에 도착할 수 있어?",
+            "options": [
+              {
+                "text_es": "Puedo llegar a las tres de la tarde.",
+                "text_ko_hint": "오후 세 시에 도착할 수 있어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Puedo a llegar a las tres de la tarde.",
+                "text_ko_hint": "오후 세 시에 도착할 수 있어.",
+                "correct": false,
+                "correctionKo": "다시 한번 기억하자: 'poder' 다음에는 'a' 없이 바로 동사원형이 와야 해요. 'puedo llegar'가 맞는 형태예요.",
+                "correctEs": "Puedo llegar a las tres de la tarde.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Genial, después del partido podemos comer tacos.",
+            "text_ko": "좋아, 경기 끝나고 우리 타코 먹으러 갈 수 있어.",
+            "options": [
+              {
+                "text_es": "¡Perfecto! No puedo esperar para verte.",
+                "text_ko_hint": "완벽해! 너 만나는 게 너무 기대돼.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Perfecto! No puedo a esperar para verte.",
+                "text_ko_hint": "완벽해! 너 만나는 게 너무 기대돼.",
+                "correct": false,
+                "correctionKo": "'poder + 동사원형' 규칙, 기억하지? 'no puedo esperar'처럼 'a' 없이 바로 이어줘야 자연스러워요.",
+                "correctEs": "¡Perfecto! No puedo esperar para verte.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "새로운 노래",
+        "start": "n1",
+        "endMessage": "마테오와 새 노래 취향에 대해 이야기했어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Descubrí una canción nueva que me encanta. ¿Tienes alguna canción favorita ahora?",
+            "text_ko": "요즘 완전 좋아하는 노래를 발견했어. 지금 좋아하는 노래 있어?",
+            "options": [
+              {
+                "text_es": "Sí, me encanta una canción de reguetón.",
+                "text_ko_hint": "응, 레게톤 노래 하나를 정말 좋아해.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Sí, me encantan una canción de reguetón.",
+                "text_ko_hint": "응, 레게톤 노래 하나를 정말 좋아해.",
+                "correct": false,
+                "correctionKo": "'encantar'도 'gustar'처럼 좋아하는 대상의 수에 맞춰 변해요. 'una canción'은 단수니까 'me encanta'라고 해야 하고, 'me encantan'은 복수 대상 앞에 써요.",
+                "correctEs": "Sí, me encanta una canción de reguetón.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "A mí me fascinan las canciones con guitarra. ¿Qué tipo de música te fascina?",
+            "text_ko": "나는 기타 소리 나는 노래들에 푹 빠져 있어. 어떤 음악에 푹 빠져 있어?",
+            "options": [
+              {
+                "text_es": "Me fascinan las canciones de pop latino.",
+                "text_ko_hint": "나는 라틴 팝 노래들에 푹 빠져 있어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Me fascina las canciones de pop latino.",
+                "text_ko_hint": "나는 라틴 팝 노래들에 푹 빠져 있어.",
+                "correct": false,
+                "correctionKo": "'las canciones'는 복수니까 'fascinar'도 복수형인 'fascinan'을 써야 해요. 'fascina'는 단수 대상 앞에만 써요.",
+                "correctEs": "Me fascinan las canciones de pop latino.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Deberíamos hacer una lista de reproducción juntos.",
+            "text_ko": "우리 같이 플레이리스트 만들면 좋겠다.",
+            "options": [
+              {
+                "text_es": "¡Sí! Me encantan las buenas ideas como esa.",
+                "text_ko_hint": "좋아! 그런 좋은 생각 정말 좋아해.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Sí! Me encanta las buenas ideas como esa.",
+                "text_ko_hint": "좋아! 그런 좋은 생각 정말 좋아해.",
+                "correct": false,
+                "correctionKo": "'las buenas ideas'는 복수라서 'encantar'도 'encantan'으로 맞춰야 해요. 'encanta'는 단수 명사 앞에서만 써요.",
+                "correctEs": "¡Sí! Me encantan las buenas ideas como esa.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "대학 수업",
+        "start": "n1",
+        "endMessage": "마테오와 수업 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Tengo mucha tarea esta semana. Debo estudiar para mi clase de historia.",
+            "text_ko": "이번 주에 숙제가 많아. 역사 수업 공부를 해야 해.",
+            "options": [
+              {
+                "text_es": "Yo también debo estudiar para un examen de matemáticas.",
+                "text_ko_hint": "나도 수학 시험 공부를 해야 해.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Yo también debo a estudiar para un examen de matemáticas.",
+                "text_ko_hint": "나도 수학 시험 공부를 해야 해.",
+                "correct": false,
+                "correctionKo": "'deber' 뒤에도 'poder'처럼 전치사 없이 바로 동사원형이 와요. 'debo a estudiar'가 아니라 'debo estudiar'가 맞아요.",
+                "correctEs": "Yo también debo estudiar para un examen de matemáticas.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "¿A qué hora debes ir a clase mañana?",
+            "text_ko": "내일 몇 시에 수업에 가야 해?",
+            "options": [
+              {
+                "text_es": "Debo llegar a la universidad a las ocho.",
+                "text_ko_hint": "여덟 시에 학교에 도착해야 해.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Debo a llegar a la universidad a las ocho.",
+                "text_ko_hint": "여덟 시에 학교에 도착해야 해.",
+                "correct": false,
+                "correctionKo": "기억하자! 'deber + 동사원형'에는 'a'가 필요 없어요. 'debo llegar'가 맞는 형태예요.",
+                "correctEs": "Debo llegar a la universidad a las ocho.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Después de clase deberíamos estudiar juntos en la biblioteca.",
+            "text_ko": "수업 끝나고 우리 도서관에서 같이 공부하면 좋겠다.",
+            "options": [
+              {
+                "text_es": "¡Buena idea! Debo terminar un proyecto importante.",
+                "text_ko_hint": "좋은 생각이야! 나는 중요한 프로젝트를 끝내야 해.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Buena idea! Debo a terminar un proyecto importante.",
+                "text_ko_hint": "좋은 생각이야! 나는 중요한 프로젝트를 끝내야 해.",
+                "correct": false,
+                "correctionKo": "다시 한번: 'deber' 다음에는 'a' 없이 바로 동사원형이 와야 해요. 'debo terminar'가 자연스러운 표현이에요.",
+                "correctEs": "¡Buena idea! Debo terminar un proyecto importante.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "시험",
+        "start": "n1",
+        "endMessage": "마테오와 시험 스트레스를 나누며 응원했어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Tengo un examen difícil mañana. Tengo que estudiar toda la noche.",
+            "text_ko": "내일 어려운 시험이 있어. 밤새 공부해야 해.",
+            "options": [
+              {
+                "text_es": "Uy, yo también tengo que estudiar mucho esta semana.",
+                "text_ko_hint": "어이구, 나도 이번 주에 공부 많이 해야 해.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Uy, yo también hay que estudiar mucho esta semana.",
+                "text_ko_hint": "어이구, 나도 이번 주에 공부 많이 해야 해.",
+                "correct": false,
+                "correctionKo": "'hay que'는 특정 주어 없이 '누구나 ~해야 한다'는 일반적인 의무를 말할 때 써요. 나 개인의 의무를 말할 때는 'tener que'를 써서 'tengo que'라고 해야 해요.",
+                "correctEs": "Uy, yo también tengo que estudiar mucho esta semana.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "Para sacar buenas notas, hay que practicar todos los días, ¿no crees?",
+            "text_ko": "좋은 성적을 받으려면 매일 연습해야 하는 것 같아, 안 그래?",
+            "options": [
+              {
+                "text_es": "Sí, hay que practicar mucho para aprender bien.",
+                "text_ko_hint": "응, 잘 배우려면 많이 연습해야 해.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Sí, hay practicar mucho para aprender bien.",
+                "text_ko_hint": "응, 잘 배우려면 많이 연습해야 해.",
+                "correct": false,
+                "correctionKo": "'~해야 한다'는 일반적인 의무는 'hay que + 동사원형'이라는 고정 표현이에요. 'que'를 빼먹으면 안 되는 필수 표현이에요.",
+                "correctEs": "Sí, hay que practicar mucho para aprender bien.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "¡Buena suerte en tu examen! Tienes que confiar en ti mismo.",
+            "text_ko": "시험 잘 봐! 너 자신을 믿어야 해.",
+            "options": [
+              {
+                "text_es": "Gracias, tengo que relajarme un poco antes de estudiar.",
+                "text_ko_hint": "고마워, 공부하기 전에 좀 쉬어야겠어.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "Gracias, hay que relajarme un poco antes de estudiar.",
+                "text_ko_hint": "고마워, 공부하기 전에 좀 쉬어야겠어.",
+                "correct": false,
+                "correctionKo": "'relajarme'처럼 특정한 사람(나)에게 해당하는 의무는 'tengo que'로 말해야 해요. 'hay que'는 특정 주어가 없는 일반적인 의무에만 써요.",
+                "correctEs": "Gracias, tengo que relajarme un poco antes de estudiar.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "로드트립",
+        "start": "n1",
+        "endMessage": "마테오와 로드트립 계획을 신나게 이야기했어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Cuando haces un viaje largo, ¿a qué hora sales normalmente?",
+            "text_ko": "장거리 여행 갈 때 보통 몇 시에 출발해?",
+            "options": [
+              {
+                "text_es": "Salgo a las seis de la mañana para evitar el tráfico.",
+                "text_ko_hint": "교통 체증을 피하려고 아침 여섯 시에 출발해.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Salgo a las seis a la mañana para evitar el tráfico.",
+                "text_ko_hint": "교통 체증을 피하려고 아침 여섯 시에 출발해.",
+                "correct": false,
+                "correctionKo": "시간 뒤에 오전/오후를 말할 때는 전치사 'de'를 써요. 'a las seis de la mañana'처럼요. 'a la mañana'는 틀린 표현이에요.",
+                "correctEs": "Salgo a las seis de la mañana para evitar el tráfico.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "¿Cuánto tiempo dura el viaje hasta la playa?",
+            "text_ko": "해변까지 가는 여행은 얼마나 걸려?",
+            "options": [
+              {
+                "text_es": "El viaje dura tres horas más o menos.",
+                "text_ko_hint": "여행은 대략 세 시간 걸려.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "El viaje dura para tres horas más o menos.",
+                "text_ko_hint": "여행은 대략 세 시간 걸려.",
+                "correct": false,
+                "correctionKo": "'durar'(지속되다) 동사는 바로 뒤에 시간 표현이 와요. 'para' 같은 전치사를 넣을 필요가 없어요. 'dura tres horas'가 맞는 표현이에요.",
+                "correctEs": "El viaje dura tres horas más o menos.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Vamos a llegar a la playa dentro de dos semanas, ¡qué emoción!",
+            "text_ko": "2주 후에 해변에 도착할 거야, 완전 신난다!",
+            "options": [
+              {
+                "text_es": "¡Qué padre! Dentro de un mes yo también voy de viaje.",
+                "text_ko_hint": "완전 좋다! 나도 한 달 후에 여행 가.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Qué padre! Dentro un mes yo también voy de viaje.",
+                "text_ko_hint": "완전 좋다! 나도 한 달 후에 여행 가.",
+                "correct": false,
+                "correctionKo": "'~후에'라는 뜻의 표현은 'dentro de'예요. 'dentro' 다음에 꼭 'de'를 붙여야 해요. 'dentro un mes'는 틀린 표현이에요.",
+                "correctEs": "¡Qué padre! Dentro de un mes yo también voy de viaje.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "좋아하는 감독",
+        "start": "n1",
+        "endMessage": "마테오와 좋아하는 감독 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "¿Conoces al director Guillermo del Toro? Es mexicano y hace películas increíbles.",
+            "text_ko": "기예르모 델 토로 감독 알아? 멕시코 사람인데 영화를 진짜 잘 만들어.",
+            "options": [
+              {
+                "text_es": "Sí, lo conozco, ¡me encantan sus películas!",
+                "text_ko_hint": "응, 알아, 그 사람 영화 정말 좋아해!",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Sí, lo sé, ¡me encantan sus películas!",
+                "text_ko_hint": "응, 알아, 그 사람 영화 정말 좋아해!",
+                "correct": false,
+                "correctionKo": "사람을 안다고 할 때는 'conocer'를 써요. 'saber'는 정보나 방법을 안다고 할 때 쓰는 동사라서 사람에게는 어울리지 않아요.",
+                "correctEs": "Sí, lo conozco, ¡me encantan sus películas!",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "¿Sabes en qué año ganó el Óscar?",
+            "text_ko": "그 감독이 몇 년도에 오스카를 받았는지 알아?",
+            "options": [
+              {
+                "text_es": "No, no sé exactamente, pero creo que fue hace unos años.",
+                "text_ko_hint": "아니, 정확히는 모르겠는데, 몇 년 전이었던 것 같아.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "No, no conozco exactamente, pero creo que fue hace unos años.",
+                "text_ko_hint": "아니, 정확히는 모르겠는데, 몇 년 전이었던 것 같아.",
+                "correct": false,
+                "correctionKo": "구체적인 정보나 사실을 안다고 할 때는 'saber'를 써요. 'conocer'는 사람이나 장소를 안다고 할 때 쓰는 동사예요.",
+                "correctEs": "No, no sé exactamente, pero creo que fue hace unos años.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Sus películas se grabaron en varios lugares de México.",
+            "text_ko": "그 감독 영화들은 멕시코 여러 곳에서 촬영됐어.",
+            "options": [
+              {
+                "text_es": "¡Qué interesante! Quiero conocer México algún día.",
+                "text_ko_hint": "완전 흥미롭다! 언젠가 멕시코를 가보고 싶어.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Qué interesante! Quiero saber México algún día.",
+                "text_ko_hint": "완전 흥미롭다! 언젠가 멕시코를 가보고 싶어.",
+                "correct": false,
+                "correctionKo": "장소를 가보다, 알게 되다라는 의미로는 'conocer'를 써요. 'saber'는 장소가 아니라 정보나 지식을 안다고 할 때 써요.",
+                "correctEs": "¡Qué interesante! Quiero conocer México algún día.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "만화책과 애니",
+        "start": "n1",
+        "endMessage": "마테오와 만화책과 애니 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Estoy leyendo un cómic buenísimo. ¿Tú lees cómics o animes?",
+            "text_ko": "나 완전 재밌는 만화책 읽고 있어. 너도 만화책이나 애니 봐?",
+            "options": [
+              {
+                "text_es": "Sí, veo animes. Los veo casi todos los días.",
+                "text_ko_hint": "응, 애니 봐. 거의 매일 봐.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Sí, veo animes. Veo los casi todos los días.",
+                "text_ko_hint": "응, 애니 봐. 거의 매일 봐.",
+                "correct": false,
+                "correctionKo": "직접목적격 대명사(lo/la/los/las)는 활용된 동사 앞에 와요. 'los veo'가 맞고, 'veo los'처럼 동사 뒤에 두면 틀려요.",
+                "correctEs": "Sí, veo animes. Los veo casi todos los días.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "¿Ya viste la nueva película de Spider-Man?",
+            "text_ko": "새로 나온 스파이더맨 영화 벌써 봤어?",
+            "options": [
+              {
+                "text_es": "No, todavía no la vi, pero quiero verla pronto.",
+                "text_ko_hint": "아니, 아직 안 봤는데, 곧 보고 싶어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "No, todavía no vi la, pero quiero verla pronto.",
+                "text_ko_hint": "아니, 아직 안 봤는데, 곧 보고 싶어.",
+                "correct": false,
+                "correctionKo": "'la'(그것을, 여성형)는 활용된 동사 앞에 놓아야 해요. 'no la vi'가 맞고, 'no vi la'는 순서가 틀렸어요.",
+                "correctEs": "No, todavía no la vi, pero quiero verla pronto.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Yo ya compré los cómics nuevos de esta semana.",
+            "text_ko": "난 이번 주 새 만화책들 벌써 샀어.",
+            "options": [
+              {
+                "text_es": "¡Qué bien! Yo los voy a comprar este fin de semana.",
+                "text_ko_hint": "좋다! 나는 이번 주말에 살 거야.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Qué bien! Yo voy a comprarlos los este fin de semana.",
+                "text_ko_hint": "좋다! 나는 이번 주말에 살 거야.",
+                "correct": false,
+                "correctionKo": "직접목적격 대명사는 동사원형 뒤에 붙이거나('comprarlos') 활용된 동사 앞에 두거나('los voy a comprar') 둘 중 하나만 써야 해요. 두 가지를 동시에 쓰면 중복이에요.",
+                "correctEs": "¡Qué bien! Yo los voy a comprar este fin de semana.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "파티 초대",
+        "start": "n1",
+        "endMessage": "마테오의 파티 초대에 신나게 답했어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Voy a hacer una fiesta el viernes. ¿Quieres venir?",
+            "text_ko": "금요일에 파티 열 건데, 올래?",
+            "options": [
+              {
+                "text_es": "¡Sí! Quiero ir, va a ser divertido.",
+                "text_ko_hint": "응! 갈래, 재밌을 것 같아.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "¡Sí! Quiero a ir, va a ser divertido.",
+                "text_ko_hint": "응! 갈래, 재밌을 것 같아.",
+                "correct": false,
+                "correctionKo": "'querer' 뒤에도 전치사 없이 바로 동사원형이 와요. 'quiero a ir'가 아니라 'quiero ir'가 맞아요.",
+                "correctEs": "¡Sí! Quiero ir, va a ser divertido.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "¿Quieres traer algo de comer o de tomar?",
+            "text_ko": "먹을 거나 마실 거 뭔가 가져오고 싶어?",
+            "options": [
+              {
+                "text_es": "Quiero traer unos refrescos y botanas.",
+                "text_ko_hint": "음료수랑 간식 좀 가져오고 싶어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Quiero a traer unos refrescos y botanas.",
+                "text_ko_hint": "음료수랑 간식 좀 가져오고 싶어.",
+                "correct": false,
+                "correctionKo": "다시 한번: 'querer + 동사원형'에는 'a'가 필요 없어요. 'quiero traer'가 맞는 형태예요.",
+                "correctEs": "Quiero traer unos refrescos y botanas.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Perfecto, va a estar increíble la fiesta.",
+            "text_ko": "완벽해, 파티 진짜 대단할 거야.",
+            "options": [
+              {
+                "text_es": "¡No puedo esperar! Quiero conocer a tus otros amigos también.",
+                "text_ko_hint": "너무 기대돼! 네 다른 친구들도 만나고 싶어.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡No puedo esperar! Quiero a conocer a tus otros amigos también.",
+                "text_ko_hint": "너무 기대돼! 네 다른 친구들도 만나고 싶어.",
+                "correct": false,
+                "correctionKo": "'querer' 다음에는 항상 'a' 없이 동사원형이 바로 와야 해요. 'quiero conocer'가 자연스러운 표현이에요.",
+                "correctEs": "¡No puedo esperar! Quiero conocer a tus otros amigos también.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "카페에서",
+        "start": "n1",
+        "endMessage": "마테오와 카페에서 즐거운 시간을 보냈어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "¡Hola! Estoy tomando un café aquí. ¿Qué estás haciendo?",
+            "text_ko": "안녕! 나 여기서 커피 마시고 있어. 뭐 하고 있어?",
+            "options": [
+              {
+                "text_es": "Estoy escribiendo un mensaje a mi mamá.",
+                "text_ko_hint": "엄마한테 메시지 쓰고 있어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Estoy escribendo un mensaje a mi mamá.",
+                "text_ko_hint": "엄마한테 메시지 쓰고 있어.",
+                "correct": false,
+                "correctionKo": "-ir로 끝나는 동사 'escribir'의 현재분사(gerundio)는 'escribiendo'예요. 'escribendo'는 잘못된 철자예요.",
+                "correctEs": "Estoy escribiendo un mensaje a mi mamá.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "Mira, el mesero está leyendo nuestra orden en voz alta.",
+            "text_ko": "봐봐, 종업원이 우리 주문을 소리 내서 읽고 있어.",
+            "options": [
+              {
+                "text_es": "Sí, y esa señora está pidiendo un café también.",
+                "text_ko_hint": "응, 저기 저 아주머니도 커피를 주문하고 있어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Sí, y esa señora está pidendo un café también.",
+                "text_ko_hint": "응, 저기 저 아주머니도 커피를 주문하고 있어.",
+                "correct": false,
+                "correctionKo": "'pedir'는 어간이 e에서 i로 바뀌는 동사라서 현재분사는 'pidiendo'예요. 'pidendo'는 어간 변화를 빠뜨린 잘못된 형태예요.",
+                "correctEs": "Sí, y esa señora está pidiendo un café también.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Bueno, ya me tengo que ir. Mi amigo me está esperando afuera.",
+            "text_ko": "이제 가야 해. 친구가 밖에서 나 기다리고 있어.",
+            "options": [
+              {
+                "text_es": "¡Ok! Nos estamos divirtiendo mucho hoy, ¿verdad?",
+                "text_ko_hint": "알겠어! 우리 오늘 진짜 재밌었지, 그렇지?",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Ok! Nos estamos divertiendo mucho hoy, ¿verdad?",
+                "text_ko_hint": "알겠어! 우리 오늘 진짜 재밌었지, 그렇지?",
+                "correct": false,
+                "correctionKo": "'divertirse'는 현재분사에서 어간이 e에서 i로 바뀌어 'divirtiendo'가 돼요. 'divertiendo'는 어간 변화를 놓친 흔한 실수예요.",
+                "correctEs": "¡Ok! Nos estamos divirtiendo mucho hoy, ¿verdad?",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "비 오는 날 계획",
+        "start": "n1",
+        "endMessage": "마테오와 비 오는 날 계획을 이야기했어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Está lloviendo mucho. Voy a quedarme en mi casa viendo pelis.",
+            "text_ko": "비가 많이 온다. 나는 집에서 영화 보면서 있을 거야.",
+            "options": [
+              {
+                "text_es": "Yo también voy a quedarme en mi casa hoy.",
+                "text_ko_hint": "나도 오늘 우리 집에 있을 거야.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Yo también voy a quedarme en su casa hoy.",
+                "text_ko_hint": "나도 오늘 우리 집에 있을 거야.",
+                "correct": false,
+                "correctionKo": "'나의'라는 뜻의 소유격은 'mi'예요. 'su'는 '그/그녀/당신의'라는 뜻이라 지금 문맥(내 집)에는 맞지 않아요.",
+                "correctEs": "Yo también voy a quedarme en mi casa hoy.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "Mi hermana y yo vamos a ver nuestra serie favorita.",
+            "text_ko": "내 여동생이랑 우리가 제일 좋아하는 드라마를 볼 거야.",
+            "options": [
+              {
+                "text_es": "Qué lindo, ¿cómo se llama su serie favorita?",
+                "text_ko_hint": "좋다, 너희가 제일 좋아하는 드라마 이름이 뭐야?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Qué lindo, ¿cómo se llama tu serie favorita?",
+                "text_ko_hint": "좋다, 너희가 제일 좋아하는 드라마 이름이 뭐야?",
+                "correct": false,
+                "correctionKo": "마테오가 여동생과 함께 'nuestra'(우리의)라고 했으니, 두 사람의 것을 가리킬 때는 'su'(그들의)를 써야 해요. 'tu'는 상대방 한 사람만 가리켜서 이 상황엔 맞지 않아요.",
+                "correctEs": "Qué lindo, ¿cómo se llama su serie favorita?",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Nuestros papás también ven series con nosotros a veces.",
+            "text_ko": "우리 부모님도 가끔 우리랑 같이 드라마를 보셔.",
+            "options": [
+              {
+                "text_es": "¡Qué divertido! Mis papás también hacen eso.",
+                "text_ko_hint": "재밌겠다! 우리 부모님도 그렇게 하셔.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Qué divertido! Mi papás también hacen eso.",
+                "text_ko_hint": "재밌겠다! 우리 부모님도 그렇게 하셔.",
+                "correct": false,
+                "correctionKo": "'papás'(부모님)는 복수 명사라서 소유격도 복수형인 'mis'를 써야 해요. 'mi'는 단수 명사 앞에만 써요.",
+                "correctEs": "¡Qué divertido! Mis papás también hacen eso.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "새로운 식당",
+        "start": "n1",
+        "endMessage": "마테오와 새로운 식당 이야기로 군침이 돌았어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Fui a un restaurante nuevo. Es más rico que el otro que conocíamos.",
+            "text_ko": "새로운 식당에 가봤어. 우리가 알던 곳보다 더 맛있어.",
+            "options": [
+              {
+                "text_es": "¡Qué bien! Quiero probarlo, se ve más grande que el de la esquina.",
+                "text_ko_hint": "좋다! 가보고 싶어, 모퉁이에 있는 곳보다 더 커 보이네.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "¡Qué bien! Quiero probarlo, se ve más grande de el de la esquina.",
+                "text_ko_hint": "좋다! 가보고 싶어, 모퉁이에 있는 곳보다 더 커 보이네.",
+                "correct": false,
+                "correctionKo": "비교급 '~보다 더'는 스페인어로 'más + 형용사 + que'예요. 'de'가 아니라 'que'를 써야 해요.",
+                "correctEs": "¡Qué bien! Quiero probarlo, se ve más grande que el de la esquina.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "Y los tacos son buenísimos, son los mejores de la ciudad.",
+            "text_ko": "그리고 타코가 진짜 맛있어, 도시에서 최고야.",
+            "options": [
+              {
+                "text_es": "¡Wow! Entonces es el mejor restaurante de tacos.",
+                "text_ko_hint": "와! 그럼 최고의 타코 식당이네.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "¡Wow! Entonces es el más bueno restaurante de tacos.",
+                "text_ko_hint": "와! 그럼 최고의 타코 식당이네.",
+                "correct": false,
+                "correctionKo": "'bueno'(좋은)의 비교급/최상급은 불규칙 형태인 'mejor'예요. 'más bueno'라고 하지 않아요.",
+                "correctEs": "¡Wow! Entonces es el mejor restaurante de tacos.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Deberíamos ir juntos la próxima semana.",
+            "text_ko": "다음 주에 우리 같이 가면 좋겠다.",
+            "options": [
+              {
+                "text_es": "¡Sí! Va a ser la mejor comida de mi semana.",
+                "text_ko_hint": "좋아! 이번 주 최고의 식사가 될 거야.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Sí! Va a ser la más buena comida de mi semana.",
+                "text_ko_hint": "좋아! 이번 주 최고의 식사가 될 거야.",
+                "correct": false,
+                "correctionKo": "'bueno'의 최상급도 불규칙이라서 'la mejor'라고 해야 해요. 'la más buena'는 틀린 표현이에요.",
+                "correctEs": "¡Sí! Va a ser la mejor comida de mi semana.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "소셜미디어",
+        "start": "n1",
+        "endMessage": "마테오와 소셜미디어 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Acabo de subir una foto nueva a mis redes sociales.",
+            "text_ko": "방금 소셜미디어에 새 사진을 올렸어.",
+            "options": [
+              {
+                "text_es": "Qué bien, yo acabo de ver un video muy chistoso.",
+                "text_ko_hint": "좋다, 나는 방금 진짜 웃긴 영상을 봤어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Qué bien, yo acabo ver un video muy chistoso.",
+                "text_ko_hint": "좋다, 나는 방금 진짜 웃긴 영상을 봤어.",
+                "correct": false,
+                "correctionKo": "'방금 ~했다'는 'acabar de + 동사원형'으로 표현해요. 'acabar'와 동사원형 사이에 꼭 'de'를 넣어야 해요.",
+                "correctEs": "Qué bien, yo acabo de ver un video muy chistoso.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "Mi amigo acaba de comentar en mi foto.",
+            "text_ko": "내 친구가 방금 내 사진에 댓글을 달았어.",
+            "options": [
+              {
+                "text_es": "Qué bien, mis amigas acaban de compartir la foto también.",
+                "text_ko_hint": "좋다, 내 친구들도 방금 그 사진을 공유했어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Qué bien, mis amigas acaban compartir la foto también.",
+                "text_ko_hint": "좋다, 내 친구들도 방금 그 사진을 공유했어.",
+                "correct": false,
+                "correctionKo": "잊지 말자! 'acabar de + 동사원형'에서 'de'는 필수예요. 'acaban compartir'가 아니라 'acaban de compartir'예요.",
+                "correctEs": "Qué bien, mis amigas acaban de compartir la foto también.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Deberías publicar más seguido, tienes buen contenido.",
+            "text_ko": "너도 더 자주 올려야 해, 콘텐츠가 좋아.",
+            "options": [
+              {
+                "text_es": "Gracias, de hecho acabo de grabar un video nuevo.",
+                "text_ko_hint": "고마워, 사실 방금 새 영상을 찍었어.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "Gracias, de hecho acabo grabar un video nuevo.",
+                "text_ko_hint": "고마워, 사실 방금 새 영상을 찍었어.",
+                "correct": false,
+                "correctionKo": "다시 기억하자: 'acabar de + 동사원형'에서 'de'를 빼먹으면 안 돼요. 'acabo de grabar'가 맞는 표현이에요.",
+                "correctEs": "Gracias, de hecho acabo de grabar un video nuevo.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "셀카와 사진",
+        "start": "n1",
+        "endMessage": "마테오와 사진들을 보며 즐거운 시간을 보냈어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Mira estas fotos que tomé en mi viaje.",
+            "text_ko": "내가 여행 가서 찍은 이 사진들 봐봐.",
+            "options": [
+              {
+                "text_es": "¡Qué bonitas! Esta foto del atardecer es mi favorita.",
+                "text_ko_hint": "완전 예쁘다! 이 노을 사진이 제일 마음에 들어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "¡Qué bonitas! Este foto del atardecer es mi favorita.",
+                "text_ko_hint": "완전 예쁘다! 이 노을 사진이 제일 마음에 들어.",
+                "correct": false,
+                "correctionKo": "'foto'는 -o로 끝나지만 여성 명사예요('fotografía'의 줄임말이라서요). 그래서 지시형용사도 여성형인 'esta'를 써야 해요. 'este'는 남성 명사 앞에 써요.",
+                "correctEs": "¡Qué bonitas! Esta foto del atardecer es mi favorita.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "Y esos videos de allá son de un concierto.",
+            "text_ko": "그리고 저기 저 영상들은 콘서트에서 찍은 거야.",
+            "options": [
+              {
+                "text_es": "¡Se ven geniales! ¿Y esas personas de la primera foto son tus amigos?",
+                "text_ko_hint": "완전 멋지다! 첫 사진에 있는 저 사람들은 네 친구들이야?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "¡Se ven geniales! ¿Y esos personas de la primera foto son tus amigos?",
+                "text_ko_hint": "완전 멋지다! 첫 사진에 있는 저 사람들은 네 친구들이야?",
+                "correct": false,
+                "correctionKo": "'personas'(사람들)는 여성 명사라서 지시형용사도 여성형인 'esas'를 써야 해요. 'esos'는 남성 명사 앞에 써요.",
+                "correctEs": "¡Se ven geniales! ¿Y esas personas de la primera foto son tus amigos?",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Sí, y aquel chico con lentes es mi mejor amigo.",
+            "text_ko": "응, 그리고 저 안경 쓴 애가 내 제일 친한 친구야.",
+            "options": [
+              {
+                "text_es": "¡Qué padre! Deberíamos tomarnos una foto como esta también.",
+                "text_ko_hint": "완전 좋다! 우리도 이런 사진 한 장 찍어야겠다.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Qué padre! Deberíamos tomarnos una foto como este también.",
+                "text_ko_hint": "완전 좋다! 우리도 이런 사진 한 장 찍어야겠다.",
+                "correct": false,
+                "correctionKo": "다시 한번, 'foto'는 여성 명사니까 지시대명사도 'esta'를 써야 해요. 'este'는 남성 명사 앞에만 써요.",
+                "correctEs": "¡Qué padre! Deberíamos tomarnos una foto como esta también.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "원작 소설과 영화",
+        "start": "n1",
+        "endMessage": "마테오와 원작 소설 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Estoy leyendo el libro en el que se basó mi película favorita.",
+            "text_ko": "내가 제일 좋아하는 영화의 원작 소설을 읽고 있어.",
+            "options": [
+              {
+                "text_es": "Qué interesante, ¿lo compraste para leerlo en el viaje?",
+                "text_ko_hint": "재밌겠다, 여행 가서 읽으려고 산 거야?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Qué interesante, ¿lo compraste por leerlo en el viaje?",
+                "text_ko_hint": "재밌겠다, 여행 가서 읽으려고 산 거야?",
+                "correct": false,
+                "correctionKo": "목적('~하기 위해서')을 말할 때는 'para'를 써요. 'por'는 이유나 원인을 말할 때 주로 쓰는 전치사라서 이 문맥에는 맞지 않아요.",
+                "correctEs": "Qué interesante, ¿lo compraste para leerlo en el viaje?",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "Sí, y también lo compré por una recomendación de mi profesora.",
+            "text_ko": "응, 그리고 우리 교수님 추천 때문에 사기도 했어.",
+            "options": [
+              {
+                "text_es": "Ah, entonces lo leíste por ella, ¡qué buena razón!",
+                "text_ko_hint": "아, 그럼 그분 때문에 읽는 거네, 좋은 이유다!",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Ah, entonces lo leíste para ella, ¡qué buena razón!",
+                "text_ko_hint": "아, 그럼 그분 때문에 읽는 거네, 좋은 이유다!",
+                "correct": false,
+                "correctionKo": "이유나 원인('~때문에')을 말할 때는 'por'를 써요. 'para'는 목적을 말할 때 쓰는 전치사라서 이 문맥에는 어울리지 않아요.",
+                "correctEs": "Ah, entonces lo leíste por ella, ¡qué buena razón!",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "La película sale para el verano, ¡no puedo esperar!",
+            "text_ko": "그 영화는 여름에 개봉해, 너무 기대돼!",
+            "options": [
+              {
+                "text_es": "¡Yo tampoco! Voy a terminar el libro para esa fecha.",
+                "text_ko_hint": "나도! 그때까지 책을 다 읽을 거야.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Yo tampoco! Voy a terminar el libro por esa fecha.",
+                "text_ko_hint": "나도! 그때까지 책을 다 읽을 거야.",
+                "correct": false,
+                "correctionKo": "마감이나 기한('~까지')을 말할 때는 'para'를 써요. 'por'는 대략적인 시간이나 이유를 말할 때 쓰는 전치사라서 여기엔 'para'가 맞아요.",
+                "correctEs": "¡Yo tampoco! Voy a terminar el libro para esa fecha.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "할로윈 파티",
+        "start": "n1",
+        "endMessage": "마테오와 할로윈 파티 계획을 세웠어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Voy a ir a una fiesta de disfraces. Quiero un disfraz divertido.",
+            "text_ko": "할로윈 파티에 갈 건데, 재밌는 코스튬을 입고 싶어.",
+            "options": [
+              {
+                "text_es": "¡Qué padre! Yo quiero un disfraz aterrador este año.",
+                "text_ko_hint": "완전 좋다! 나는 올해 무서운 코스튬을 입고 싶어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "¡Qué padre! Yo quiero un disfraz aterradora este año.",
+                "text_ko_hint": "완전 좋다! 나는 올해 무서운 코스튬을 입고 싶어.",
+                "correct": false,
+                "correctionKo": "'disfraz'(의상)는 남성 명사라서 형용사도 남성형인 'aterrador'를 써야 해요. 'aterradora'는 여성 명사 앞에 쓰는 형태예요.",
+                "correctEs": "¡Qué padre! Yo quiero un disfraz aterrador este año.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "Mi amiga va a llevar una máscara rara.",
+            "text_ko": "내 친구는 이상한 가면을 쓸 거야.",
+            "options": [
+              {
+                "text_es": "Jaja, y mis amigos van a llevar capas negras.",
+                "text_ko_hint": "하하, 내 친구들은 검은 망토를 걸칠 거야.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Jaja, y mis amigos van a llevar capas negros.",
+                "text_ko_hint": "하하, 내 친구들은 검은 망토를 걸칠 거야.",
+                "correct": false,
+                "correctionKo": "'capas'(망토들)는 여성 복수 명사라서 형용사도 여성 복수형인 'negras'를 써야 해요. 'negros'는 남성 명사 앞에 쓰는 형태예요.",
+                "correctEs": "Jaja, y mis amigos van a llevar capas negras.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Va a ser una noche muy divertida.",
+            "text_ko": "정말 재밌는 밤이 될 거야.",
+            "options": [
+              {
+                "text_es": "¡Sí! Los dulces de esa fiesta siempre están riquísimos.",
+                "text_ko_hint": "응! 그 파티 사탕은 항상 정말 맛있어.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Sí! Los dulces de esa fiesta siempre están riquísimas.",
+                "text_ko_hint": "응! 그 파티 사탕은 항상 정말 맛있어.",
+                "correct": false,
+                "correctionKo": "'dulces'(사탕들)는 남성 복수 명사라서 형용사도 남성 복수형인 'riquísimos'를 써야 해요. 'riquísimas'는 여성 명사 앞에 쓰는 형태예요.",
+                "correctEs": "¡Sí! Los dulces de esa fiesta siempre están riquísimos.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "기타 배우기",
+        "start": "n1",
+        "endMessage": "마테오와 악기 배우는 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Llevo dos años tocando la guitarra. ¿Tú tocas algún instrumento?",
+            "text_ko": "나 기타 친 지 2년 됐어. 너도 악기 다뤄?",
+            "options": [
+              {
+                "text_es": "Sí, llevo un año aprendiendo a tocar el piano.",
+                "text_ko_hint": "응, 피아노 배운 지 1년 됐어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Sí, tengo un año aprendiendo a tocar el piano.",
+                "text_ko_hint": "응, 피아노 배운 지 1년 됐어.",
+                "correct": false,
+                "correctionKo": "'~한 지 얼마나 됐다'는 지속 기간은 'llevar + 시간 + 현재분사'로 표현해요. 이 표현에는 'tener'를 쓰지 않아요.",
+                "correctEs": "Sí, llevo un año aprendiendo a tocar el piano.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "¡Qué bien! Mi hermano lleva seis meses tomando clases de batería.",
+            "text_ko": "좋다! 내 남동생은 드럼 수업 들은 지 6개월 됐어.",
+            "options": [
+              {
+                "text_es": "Wow, yo llevo poco tiempo practicando, apenas un mes.",
+                "text_ko_hint": "와, 나는 연습한 지 얼마 안 됐어, 겨우 한 달이야.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Wow, yo tengo poco tiempo practicando, apenas un mes.",
+                "text_ko_hint": "와, 나는 연습한 지 얼마 안 됐어, 겨우 한 달이야.",
+                "correct": false,
+                "correctionKo": "다시 한번: 지속 기간은 'llevar + 시간 + 현재분사'로 표현해요. 'tengo poco tiempo'가 아니라 'llevo poco tiempo'가 맞아요.",
+                "correctEs": "Wow, yo llevo poco tiempo practicando, apenas un mes.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Deberíamos tocar algo juntos algún día.",
+            "text_ko": "언젠가 같이 연주하면 좋겠다.",
+            "options": [
+              {
+                "text_es": "¡Me encantaría! Llevo tiempo queriendo tocar con alguien.",
+                "text_ko_hint": "정말 좋겠다! 누구랑 같이 연주하고 싶었던 지 오래됐어.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Me encantaría! Tengo tiempo queriendo tocar con alguien.",
+                "text_ko_hint": "정말 좋겠다! 누구랑 같이 연주하고 싶었던 지 오래됐어.",
+                "correct": false,
+                "correctionKo": "'~한 지 오래됐다'는 'llevar + 시간 + 현재분사'로 말해요. 'tengo tiempo'가 아니라 'llevo tiempo'가 자연스러운 표현이에요.",
+                "correctEs": "¡Me encantaría! Llevo tiempo queriendo tocar con alguien.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "헬스장 루틴",
+        "start": "n1",
+        "endMessage": "마테오와 헬스장 루틴 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Empecé a ir al gimnasio. Le pedí consejos al entrenador.",
+            "text_ko": "헬스장 다니기 시작했어. 트레이너한테 조언을 부탁했어.",
+            "options": [
+              {
+                "text_es": "Qué bien, yo también le pedí una rutina nueva.",
+                "text_ko_hint": "좋다, 나도 새로운 루틴을 부탁했어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Qué bien, yo también le pregunté una rutina nueva.",
+                "text_ko_hint": "좋다, 나도 새로운 루틴을 부탁했어.",
+                "correct": false,
+                "correctionKo": "무언가를 '요청하다, 부탁하다'라고 할 때는 'pedir'를 써요. 'preguntar'는 정보를 물어볼 때 쓰는 동사라서 물건이나 도움을 요청할 때는 어울리지 않아요.",
+                "correctEs": "Qué bien, yo también le pedí una rutina nueva.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "Le pregunté cuántas veces debo ir por semana.",
+            "text_ko": "일주일에 몇 번 가야 하는지 물어봤어.",
+            "options": [
+              {
+                "text_es": "Buena pregunta, yo le pregunté lo mismo.",
+                "text_ko_hint": "좋은 질문이네, 나도 똑같이 물어봤어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Buena pregunta, yo le pedí lo mismo.",
+                "text_ko_hint": "좋은 질문이네, 나도 똑같이 물어봤어.",
+                "correct": false,
+                "correctionKo": "정보를 물어볼 때는 'preguntar'를 써요. 'pedir'는 무언가를 요청/부탁할 때 쓰는 동사라서 질문하는 상황에는 맞지 않아요.",
+                "correctEs": "Buena pregunta, yo le pregunté lo mismo.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Voy a pedirle otra rutina la próxima semana.",
+            "text_ko": "다음 주에 또 다른 루틴을 부탁할 거야.",
+            "options": [
+              {
+                "text_es": "Buena idea, yo voy a pedir consejos sobre la dieta también.",
+                "text_ko_hint": "좋은 생각이야, 나도 식단 조언을 부탁할 거야.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "Buena idea, yo voy a preguntar consejos sobre la dieta también.",
+                "text_ko_hint": "좋은 생각이야, 나도 식단 조언을 부탁할 거야.",
+                "correct": false,
+                "correctionKo": "조언을 '요청하다'라고 할 때도 'pedir'를 써요. 'preguntar'는 질문할 때 쓰는 동사니까 여기선 'pedir'가 맞아요.",
+                "correctEs": "Buena idea, yo voy a pedir consejos sobre la dieta también.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "아르바이트",
+        "start": "n1",
+        "endMessage": "마테오와 아르바이트 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Empecé un trabajo de medio tiempo en una cafetería. Gano cien pesos por hora.",
+            "text_ko": "카페에서 아르바이트 시작했어. 시간당 100페소를 벌어.",
+            "options": [
+              {
+                "text_es": "¡Qué bien! Yo gano ochenta pesos por hora en mi trabajo.",
+                "text_ko_hint": "좋다! 나는 시간당 80페소를 벌어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "¡Qué bien! Yo gano ochenta peso por hora en mi trabajo.",
+                "text_ko_hint": "좋다! 나는 시간당 80페소를 벌어.",
+                "correct": false,
+                "correctionKo": "숫자가 1보다 크면 명사도 복수형을 써야 해요. 'ochenta pesos'처럼 's'를 붙여야 하고, 'peso'라고 단수로 쓰면 틀려요.",
+                "correctEs": "¡Qué bien! Yo gano ochenta pesos por hora en mi trabajo.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "Ayer vendimos veintiún cafés en una hora, ¡un récord!",
+            "text_ko": "어제 한 시간 만에 커피 21잔을 팔았어, 기록이야!",
+            "options": [
+              {
+                "text_es": "¡Wow! En mi trabajo vendimos treinta y un sándwiches ese día.",
+                "text_ko_hint": "와! 우리 가게에서는 그날 샌드위치 31개를 팔았어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "¡Wow! En mi trabajo vendimos treinta y uno sándwiches ese día.",
+                "text_ko_hint": "와! 우리 가게에서는 그날 샌드위치 31개를 팔았어.",
+                "correct": false,
+                "correctionKo": "'uno'가 남성 명사 바로 앞에 오면 'un'으로 줄여야 해요. 'treinta y uno sándwiches'가 아니라 'treinta y un sándwiches'가 맞아요.",
+                "correctEs": "¡Wow! En mi trabajo vendimos treinta y un sándwiches ese día.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Con lo que gano, voy a ahorrar para comprar una laptop nueva.",
+            "text_ko": "번 돈으로 새 노트북 사려고 저축할 거야.",
+            "options": [
+              {
+                "text_es": "¡Qué buena meta! Yo quiero ahorrar mil pesos este mes.",
+                "text_ko_hint": "좋은 목표다! 나는 이번 달에 천 페소를 모으고 싶어.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Qué buena meta! Yo quiero ahorrar mil peso este mes.",
+                "text_ko_hint": "좋은 목표다! 나는 이번 달에 천 페소를 모으고 싶어.",
+                "correct": false,
+                "correctionKo": "'mil'(천) 뒤에 오는 명사도 복수형이어야 해요. 'mil pesos'가 맞고, 'peso'라고 단수로 쓰면 틀려요.",
+                "correctEs": "¡Qué buena meta! Yo quiero ahorrar mil pesos este mes.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "휴대폰 교체",
+        "start": "n1",
+        "endMessage": "마테오와 새 휴대폰 고르는 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Mi celular ya no funciona bien, se congela mucho.",
+            "text_ko": "내 휴대폰이 이제 잘 안 돼, 자꾸 멈춰.",
+            "options": [
+              {
+                "text_es": "Qué mal, ¿cuál es el modelo que tienes?",
+                "text_ko_hint": "안됐다, 네가 가진 게 어떤 모델이야?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Qué mal, ¿qué es el modelo que tienes?",
+                "text_ko_hint": "안됐다, 네가 가진 게 어떤 모델이야?",
+                "correct": false,
+                "correctionKo": "여러 선택지 중 하나를 고르거나 구체적인 것을 물을 때는 'cuál'을 써요. 'qué'는 정의나 설명을 물을 때 쓰는 의문사라서 이 문맥엔 'cuál'이 맞아요.",
+                "correctEs": "Qué mal, ¿cuál es el modelo que tienes?",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "Hay varios celulares nuevos en la tienda.",
+            "text_ko": "가게에 새 휴대폰이 여러 개 있어.",
+            "options": [
+              {
+                "text_es": "¿Cuál es el más barato de todos?",
+                "text_ko_hint": "그중에서 제일 저렴한 게 뭐야?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "¿Qué es el más barato de todos?",
+                "text_ko_hint": "그중에서 제일 저렴한 게 뭐야?",
+                "correct": false,
+                "correctionKo": "여러 개 중에서 하나를 고를 때는 'cuál'을 써요. 'qué'는 '무엇'이라는 뜻으로 정의를 물을 때 쓰기 때문에 이 문맥에는 맞지 않아요.",
+                "correctEs": "¿Cuál es el más barato de todos?",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "El azul es el más barato, cuesta dos mil pesos.",
+            "text_ko": "파란색이 제일 싸, 2000페소야.",
+            "options": [
+              {
+                "text_es": "¡Perfecto! ¿Qué opinas, debería comprarlo?",
+                "text_ko_hint": "완벽해! 네 생각은 어때, 그거 사야 할까?",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Perfecto! ¿Cuál opinas, debería comprarlo?",
+                "text_ko_hint": "완벽해! 네 생각은 어때, 그거 사야 할까?",
+                "correct": false,
+                "correctionKo": "의견이나 생각을 물을 때는 'qué opinas'라고 해요. 'cuál'은 선택지 중 하나를 고를 때 쓰는 의문사라서 이 문맥엔 어울리지 않아요.",
+                "correctEs": "¡Perfecto! ¿Qué opinas, debería comprarlo?",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "채식 식당",
+        "start": "n1",
+        "endMessage": "마테오와 음식 취향 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "¿Comes carne? Yo no como carne, soy vegetariano.",
+            "text_ko": "고기 먹어? 나는 고기 안 먹어, 채식주의자야.",
+            "options": [
+              {
+                "text_es": "Yo tampoco como carne, prefiero las verduras.",
+                "text_ko_hint": "나도 고기 안 먹어, 채소를 더 좋아해.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Yo también no como carne, prefiero las verduras.",
+                "text_ko_hint": "나도 고기 안 먹어, 채소를 더 좋아해.",
+                "correct": false,
+                "correctionKo": "부정문에 동의할 때는 'también'이 아니라 'tampoco'를 써요. 'también no'는 스페인어에서 쓰지 않는 표현이에요.",
+                "correctEs": "Yo tampoco como carne, prefiero las verduras.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "Nunca he comido insectos, ¿tú sí?",
+            "text_ko": "나는 곤충 먹어본 적이 한 번도 없어, 너는?",
+            "options": [
+              {
+                "text_es": "No, nunca he comido insectos tampoco.",
+                "text_ko_hint": "아니, 나도 곤충은 한 번도 안 먹어봤어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "No, he comido insectos nunca tampoco.",
+                "text_ko_hint": "아니, 나도 곤충은 한 번도 안 먹어봤어.",
+                "correct": false,
+                "correctionKo": "'nunca'(절대 ~않다)는 보통 동사 앞에 놓아요. 동사 뒤에 두려면 그 앞에 'no'가 있어야 해요. 아무 부정어 없이 동사 뒤에만 두면 어색한 문장이 돼요.",
+                "correctEs": "No, nunca he comido insectos tampoco.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Hay un restaurante vegetariano nuevo. ¿Quieres ir?",
+            "text_ko": "새로 생긴 채식 식당이 있어. 갈래?",
+            "options": [
+              {
+                "text_es": "¡Claro! No conozco ningún restaurante vegetariano por aquí.",
+                "text_ko_hint": "물론이지! 이 근처에 채식 식당을 하나도 몰라.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Claro! No conozco algún restaurante vegetariano por aquí.",
+                "text_ko_hint": "물론이지! 이 근처에 채식 식당을 하나도 몰라.",
+                "correct": false,
+                "correctionKo": "부정문에서는 'algún'(어떤) 대신 'ningún'(아무~도 없는)을 써야 해요. 'no conozco algún'이 아니라 'no conozco ningún'이 맞아요.",
+                "correctEs": "¡Claro! No conozco ningún restaurante vegetariano por aquí.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "가족과 영상통화",
+        "start": "n1",
+        "endMessage": "마테오와 가족 영상통화 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Voy a llamar a mi familia por video. Son las nueve de la noche allá.",
+            "text_ko": "가족이랑 영상통화 할 거야. 거기는 지금 밤 9시야.",
+            "options": [
+              {
+                "text_es": "Qué bien, yo llamo a mi familia a las diez de la noche siempre.",
+                "text_ko_hint": "좋다, 나는 항상 밤 10시에 가족한테 전화해.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Qué bien, yo llamo a mi familia son las diez de la noche siempre.",
+                "text_ko_hint": "좋다, 나는 항상 밤 10시에 가족한테 전화해.",
+                "correct": false,
+                "correctionKo": "'몇 시에 ~하다'라고 할 때는 'a las + 시간'을 써요. 'son las'는 '지금 몇 시다'라고 현재 시각을 말할 때만 쓰는 표현이에요.",
+                "correctEs": "Qué bien, yo llamo a mi familia a las diez de la noche siempre.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "¿Qué hora es ahora donde tú vives?",
+            "text_ko": "지금 네가 사는 곳은 몇 시야?",
+            "options": [
+              {
+                "text_es": "Son las tres de la tarde aquí.",
+                "text_ko_hint": "여기는 오후 3시야.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Es las tres de la tarde aquí.",
+                "text_ko_hint": "여기는 오후 3시야.",
+                "correct": false,
+                "correctionKo": "시각이 2시 이상일 때는 'son las'를 써요. 'es la'는 1시일 때만 쓰는 표현이에요.",
+                "correctEs": "Son las tres de la tarde aquí.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Entonces hay seis horas de diferencia entre nosotros.",
+            "text_ko": "그럼 우리 사이엔 6시간 차이가 있네.",
+            "options": [
+              {
+                "text_es": "Sí, por eso te llamo a las ocho de la mañana mi hora.",
+                "text_ko_hint": "응, 그래서 내 시간으로 아침 8시에 너한테 전화해.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "Sí, por eso te llamo son las ocho de la mañana mi hora.",
+                "text_ko_hint": "응, 그래서 내 시간으로 아침 8시에 너한테 전화해.",
+                "correct": false,
+                "correctionKo": "특정 시각에 무언가를 한다고 할 때는 'a las + 시간'을 써야 해요. 'son las'는 현재 시각을 말할 때만 쓰는 표현이라 이 문맥엔 맞지 않아요.",
+                "correctEs": "Sí, por eso te llamo a las ocho de la mañana mi hora.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "분실물",
+        "start": "n1",
+        "endMessage": "마테오와 함께 잃어버린 물건을 찾았어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "No encuentro mi mochila, creo que la perdí en el cine.",
+            "text_ko": "가방을 못 찾겠어, 영화관에서 잃어버린 것 같아.",
+            "options": [
+              {
+                "text_es": "Uy, ¿dónde está el cine exactamente?",
+                "text_ko_hint": "어이구, 영화관이 정확히 어디에 있어?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Uy, ¿dónde es el cine exactamente?",
+                "text_ko_hint": "어이구, 영화관이 정확히 어디에 있어?",
+                "correct": false,
+                "correctionKo": "위치를 물을 때는 'estar'를 써요. 'ser'는 정체성이나 특징을 말할 때 쓰는 동사라서 장소를 물을 때는 어울리지 않아요.",
+                "correctEs": "Uy, ¿dónde está el cine exactamente?",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "Mi mochila es negra con rayas rojas.",
+            "text_ko": "내 가방은 검은색에 빨간 줄무늬가 있어.",
+            "options": [
+              {
+                "text_es": "Ok, voy a buscar una mochila así, ¿está cerca de aquí el cine?",
+                "text_ko_hint": "알겠어, 그런 가방을 찾아볼게, 영화관이 여기서 가까워?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Ok, voy a buscar una mochila así, ¿es cerca de aquí el cine?",
+                "text_ko_hint": "알겠어, 그런 가방을 찾아볼게, 영화관이 여기서 가까워?",
+                "correct": false,
+                "correctionKo": "다시 한번: 위치나 거리를 말할 때는 'estar'를 써요. 'es cerca'가 아니라 'está cerca'가 맞아요.",
+                "correctEs": "Ok, voy a buscar una mochila así, ¿está cerca de aquí el cine?",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "¡La encontré! Estaba debajo de un asiento.",
+            "text_ko": "찾았어! 좌석 밑에 있었어.",
+            "options": [
+              {
+                "text_es": "¡Qué alivio! Debes estar muy contento.",
+                "text_ko_hint": "정말 다행이다! 완전 기쁘겠다.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Qué alivio! Debes ser muy contento.",
+                "text_ko_hint": "정말 다행이다! 완전 기쁘겠다.",
+                "correct": false,
+                "correctionKo": "기분이나 일시적인 상태를 말할 때는 'estar'를 써요. 'contento'(기쁜)는 일시적인 감정이라 'ser'가 아니라 'estar'와 함께 써야 해요.",
+                "correctEs": "¡Qué alivio! Debes estar muy contento.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "물건 빌리기",
+        "start": "n1",
+        "endMessage": "마테오에게 물건을 빌려주며 도와줬어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "¿Me prestas tu cargador? El mío no funciona.",
+            "text_ko": "충전기 좀 빌려줄 수 있어? 내 게 안 돼.",
+            "options": [
+              {
+                "text_es": "Claro, te lo presto, pero lo necesito muy pronto.",
+                "text_ko_hint": "물론이지, 빌려줄게, 근데 아주 곧 필요해.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Claro, te lo presto, pero lo necesito mucho pronto.",
+                "text_ko_hint": "물론이지, 빌려줄게, 근데 아주 곧 필요해.",
+                "correct": false,
+                "correctionKo": "형용사나 부사를 꾸밀 때는 'muy'를 써요. 'mucho'는 동사를 꾸미거나 양을 말할 때 쓰는 말이라서, 부사 'pronto' 앞에는 'muy'가 맞아요.",
+                "correctEs": "Claro, te lo presto, pero lo necesito muy pronto.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "Gracias, te lo agradezco mucho.",
+            "text_ko": "고마워, 정말 고맙게 생각해.",
+            "options": [
+              {
+                "text_es": "De nada, estoy muy feliz de ayudarte.",
+                "text_ko_hint": "천만에, 도와줄 수 있어서 정말 기뻐.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "De nada, estoy mucho feliz de ayudarte.",
+                "text_ko_hint": "천만에, 도와줄 수 있어서 정말 기뻐.",
+                "correct": false,
+                "correctionKo": "형용사(feliz) 앞에는 'muy'를 써야 해요. 'mucho'는 형용사를 꾸밀 수 없는 말이에요.",
+                "correctEs": "De nada, estoy muy feliz de ayudarte.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Te lo devuelvo mañana sin falta.",
+            "text_ko": "내일 꼭 돌려줄게.",
+            "options": [
+              {
+                "text_es": "No te preocupes, no tengo mucha prisa.",
+                "text_ko_hint": "걱정하지 마, 나 별로 급하지 않아.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "No te preocupes, no tengo muy prisa.",
+                "text_ko_hint": "걱정하지 마, 나 별로 급하지 않아.",
+                "correct": false,
+                "correctionKo": "'prisa'(서두름)는 명사라서 그 앞에는 'muy'가 아니라 'mucho/mucha'를 써야 해요. 'prisa'는 여성 명사니까 'mucha prisa'가 맞아요.",
+                "correctEs": "No te preocupes, no tengo mucha prisa.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "여행 계획",
+        "start": "n1",
+        "endMessage": "마테오와 신나는 여행 계획을 세웠어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Estoy planeando un viaje a la playa. Hay un hotel muy bueno cerca del mar.",
+            "text_ko": "해변 여행을 계획하고 있어. 바다 근처에 진짜 좋은 호텔이 있어.",
+            "options": [
+              {
+                "text_es": "Qué bien, ¿y el hotel está lejos del centro?",
+                "text_ko_hint": "좋다, 그 호텔은 시내에서 멀어?",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Qué bien, ¿y el hotel hay lejos del centro?",
+                "text_ko_hint": "좋다, 그 호텔은 시내에서 멀어?",
+                "correct": false,
+                "correctionKo": "이미 언급된 특정한 것의 위치를 물을 때는 'estar'를 써요. 'hay'는 '무언가가 존재한다'는 뜻으로 처음 소개할 때 쓰고, 정해진 대상의 위치에는 쓰지 않아요.",
+                "correctEs": "Qué bien, ¿y el hotel está lejos del centro?",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "No, está muy cerca. Y hay muchos restaurantes buenos por ahí.",
+            "text_ko": "아니, 엄청 가까워. 그리고 거기 좋은 식당도 많아.",
+            "options": [
+              {
+                "text_es": "Perfecto, entonces hay muchas opciones para comer.",
+                "text_ko_hint": "완벽해, 그럼 먹을 만한 곳이 많네.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Perfecto, entonces están muchas opciones para comer.",
+                "text_ko_hint": "완벽해, 그럼 먹을 만한 곳이 많네.",
+                "correct": false,
+                "correctionKo": "정해지지 않은 것들이 '있다, 존재한다'고 말할 때는 'hay'를 써요. 'estar'는 이미 정해진 특정한 것의 위치를 말할 때 쓰기 때문에 이 문맥엔 맞지 않아요.",
+                "correctEs": "Perfecto, entonces hay muchas opciones para comer.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "El hotel está justo en la playa.",
+            "text_ko": "그 호텔은 바로 해변에 있어.",
+            "options": [
+              {
+                "text_es": "¡Genial! Entonces no hay necesidad de caminar mucho.",
+                "text_ko_hint": "완전 좋다! 그럼 많이 걸을 필요가 없겠다.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "¡Genial! Entonces no está necesidad de caminar mucho.",
+                "text_ko_hint": "완전 좋다! 그럼 많이 걸을 필요가 없겠다.",
+                "correct": false,
+                "correctionKo": "'필요가 있다/없다'처럼 존재를 말할 때는 'hay'를 써요. 'estar'는 위치를 말할 때 쓰는 동사라서 이 문맥엔 어울리지 않아요.",
+                "correctEs": "¡Genial! Entonces no hay necesidad de caminar mucho.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "topicLabel": "친구에게 문자하기",
+        "start": "n1",
+        "endMessage": "마테오와 메시지 보내는 이야기를 나눴어요!",
+        "nodes": {
+          "n1": {
+            "npcId": "mateo",
+            "text_es": "Le voy a escribir un mensaje al profesor sobre la tarea.",
+            "text_ko": "숙제에 대해서 교수님한테 문자를 보낼 거야.",
+            "options": [
+              {
+                "text_es": "Buena idea, yo también le voy a escribir al entrenador.",
+                "text_ko_hint": "좋은 생각이야, 나도 코치한테 문자를 보낼 거야.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n2"
+              },
+              {
+                "text_es": "Buena idea, yo también le voy a escribir a el entrenador.",
+                "text_ko_hint": "좋은 생각이야, 나도 코치한테 문자를 보낼 거야.",
+                "correct": false,
+                "correctionKo": "전치사 'a'와 남성 정관사 'el'이 만나면 반드시 'al'로 합쳐야 해요. 'a el entrenador'가 아니라 'al entrenador'라고 써야 해요.",
+                "correctEs": "Buena idea, yo también le voy a escribir al entrenador.",
+                "affinityDelta": 0,
+                "next": "n2"
+              }
+            ]
+          },
+          "n2": {
+            "npcId": "mateo",
+            "text_es": "¿Ya le mandaste el mensaje del grupo?",
+            "text_ko": "단체 채팅방 메시지는 벌써 보냈어?",
+            "options": [
+              {
+                "text_es": "Sí, y también le escribí al chico del club de cine.",
+                "text_ko_hint": "응, 그리고 영화 동아리 친구한테도 문자 보냈어.",
+                "correct": true,
+                "affinityDelta": 2,
+                "next": "n3"
+              },
+              {
+                "text_es": "Sí, y también le escribí al chico de el club de cine.",
+                "text_ko_hint": "응, 그리고 영화 동아리 친구한테도 문자 보냈어.",
+                "correct": false,
+                "correctionKo": "전치사 'de'와 남성 정관사 'el'이 만나면 'del'로 합쳐야 해요. 'de el club'이 아니라 'del club'이라고 써야 해요.",
+                "correctEs": "Sí, y también le escribí al chico del club de cine.",
+                "affinityDelta": 0,
+                "next": "n3"
+              }
+            ]
+          },
+          "n3": {
+            "npcId": "mateo",
+            "text_es": "Espero que te respondan pronto.",
+            "text_ko": "빨리 답장 오면 좋겠다.",
+            "options": [
+              {
+                "text_es": "Ojalá, voy a estar pendiente del celular toda la tarde.",
+                "text_ko_hint": "그러길 바라, 오후 내내 휴대폰을 계속 확인할 거야.",
+                "correct": true,
+                "affinityDelta": 3,
+                "next": "end"
+              },
+              {
+                "text_es": "Ojalá, voy a estar pendiente de el celular toda la tarde.",
+                "text_ko_hint": "그러길 바라, 오후 내내 휴대폰을 계속 확인할 거야.",
+                "correct": false,
+                "correctionKo": "다시 한번: 'de' + 'el'은 항상 'del'로 줄여 써야 해요. 'de el celular'가 아니라 'del celular'가 맞아요.",
+                "correctEs": "Ojalá, voy a estar pendiente del celular toda la tarde.",
+                "affinityDelta": 0,
+                "next": "end"
+              }
+            ]
+          }
+        }
       }
     ]
   },
